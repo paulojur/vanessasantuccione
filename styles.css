@@ -1,0 +1,24 @@
+/* Utilitário para esconder a barra de scroll no menu mobile */
+.no-scrollbar::-webkit-scrollbar { 
+    display: none; 
+}
+.no-scrollbar { 
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+/* Animação de entrada da página */
+.page-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(10px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
