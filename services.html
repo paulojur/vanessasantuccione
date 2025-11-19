@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Vanessa Santuccione</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Playfair Display', 'serif'] },
+                    colors: { neutral: { 50: '#F9FAFB', 100: '#F3F4F6', 900: '#171717' } }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-neutral-50 text-neutral-900 font-sans antialiased flex flex-col min-h-screen page-fade-in">
+
+    <header class="fixed top-0 left-0 w-full z-50 bg-neutral-50/95 backdrop-blur-sm border-b border-neutral-200/50 transition-all duration-300">
+        <div class="max-w-screen-2xl mx-auto px-6 h-20 flex items-center justify-between relative">
+            <button id="menu-btn" class="text-2xl focus:outline-none hover:opacity-70 transition-opacity z-50 w-10 text-left">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="absolute left-1/2 transform -translate-x-1/2 text-center">
+                <a href="index.html" class="text-sm md:text-base tracking-[0.3em] uppercase font-semibold whitespace-nowrap">Vanessa Santuccione</a>
+            </div>
+            <div class="w-10"></div>
+        </div>
+    </header>
+
+    <div id="menu-overlay" class="fixed inset-0 bg-neutral-50 z-40 transform -translate-x-full transition-transform duration-500 ease-in-out flex flex-col justify-center items-center">
+        <nav class="space-y-8 text-center flex flex-col">
+            <a href="index.html" class="text-3xl md:text-4xl font-light tracking-widest hover:italic transition-all">Home</a>
+            <a href="portfolio.html" class="text-3xl md:text-4xl font-light tracking-widest hover:italic transition-all">Portfolio</a>
+            <a href="about.html" class="text-3xl md:text-4xl font-light tracking-widest hover:italic transition-all">About Me</a>
+            <a href="services.html" class="text-3xl md:text-4xl font-light tracking-widest hover:italic transition-all">Services</a>
+            <a href="contact.html" class="text-3xl md:text-4xl font-light tracking-widest hover:italic transition-all">Contact</a>
+        </nav>
+    </div>
+
+    <main class="flex-grow pt-32 px-6 md:px-12 max-w-screen-2xl mx-auto w-full">
+        <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-serif italic mb-4">The Offering</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-neutral-200 border border-neutral-200 mb-24">
+            <div class="group relative bg-neutral-50 aspect-square flex flex-col items-center justify-center p-8 hover:bg-white transition-colors duration-300 overflow-hidden">
+                <div class="absolute inset-0 flex items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-white z-10">
+                    <p class="text-xs text-neutral-500 text-center leading-relaxed">Curating visual stories for high-end fashion magazines.</p>
+                </div>
+                <span class="uppercase tracking-widest text-xs md:text-sm text-center font-medium group-hover:opacity-0 transition-opacity">Editorial Narratives</span>
+            </div>
+            <div class="group relative bg-neutral-50 aspect-square flex flex-col items-center justify-center p-8 hover:bg-white transition-colors duration-300 overflow-hidden">
+                <div class="absolute inset-0 flex items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-white z-10">
+                    <p class="text-xs text-neutral-500 text-center leading-relaxed">Logos, aesthetic guidelines, and moodboards.</p>
+                </div>
+                <span class="uppercase tracking-widest text-xs md:text-sm text-center font-medium group-hover:opacity-0 transition-opacity">Brand Identity</span>
+            </div>
+            <div class="group relative bg-neutral-50 aspect-square flex flex-col items-center justify-center p-8 hover:bg-white transition-colors duration-300 overflow-hidden">
+                <div class="absolute inset-0 flex items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-white z-10">
+                    <p class="text-xs text-neutral-500 text-center leading-relaxed">Product art that transforms items into objects of desire.</p>
+                </div>
+                <span class="uppercase tracking-widest text-xs md:text-sm text-center font-medium group-hover:opacity-0 transition-opacity">Packaging Design</span>
+            </div>
+            <div class="group relative bg-neutral-50 aspect-square flex flex-col items-center justify-center p-8 hover:bg-white transition-colors duration-300 overflow-hidden">
+                <div class="absolute inset-0 flex items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-white z-10">
+                    <p class="text-xs text-neutral-500 text-center leading-relaxed">Bespoke art for private collections.</p>
+                </div>
+                <span class="uppercase tracking-widest text-xs md:text-sm text-center font-medium group-hover:opacity-0 transition-opacity">Commissions</span>
+            </div>
+        </div>
+
+        <div class="max-w-3xl mx-auto text-center mb-24">
+            <h3 class="text-xs font-bold tracking-widest uppercase mb-8">The Process</h3>
+            <div class="flex flex-col md:flex-row justify-between gap-8 text-left md:text-center">
+                <div class="flex-1">
+                    <span class="text-4xl font-serif italic text-neutral-200">01</span>
+                    <h4 class="font-medium mt-2 mb-2">Discovery</h4>
+                    <p class="text-xs text-neutral-500 leading-relaxed">We align on the emotional core of the project and the visual language required.</p>
+                </div>
+                <div class="flex-1">
+                    <span class="text-4xl font-serif italic text-neutral-200">02</span>
+                    <h4 class="font-medium mt-2 mb-2">Composition</h4>
+                    <p class="text-xs text-neutral-500 leading-relaxed">I source and layer imagery, creating initial drafts for direction review.</p>
+                </div>
+                <div class="flex-1">
+                    <span class="text-4xl font-serif italic text-neutral-200">03</span>
+                    <h4 class="font-medium mt-2 mb-2">Refinement</h4>
+                    <p class="text-xs text-neutral-500 leading-relaxed">Polishing details, textures, and color grading for the final export.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center py-8 border-t border-neutral-200 mt-auto">
+            <p class="text-[10px] text-neutral-300 uppercase tracking-widest">© 2025 Vanessa Santuccione</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
