@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Vanessa Santuccione</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Playfair Display', 'serif'] },
+                    colors: { neutral: { 50: '#F9FAFB', 100: '#F3F4F6', 900: '#171717' } }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-neutral-50 text-neutral-900 font-sans antialiased flex flex-col min-h-screen page-fade-in">
+
+    <header class="fixed top-0 left-0 w-full z-50 bg-neutral-50/95 backdrop-blur-sm border-b border-neutral-200/50 transition-all duration-300">
+        <div class="max-w-screen-2xl mx-auto px-6 h-20 flex items-center justify-between relative">
+            <button id="menu-btn" class="text-2xl focus:outline-none hover:opacity-70 transition-opacity z-50 w-10 text-left">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="absolute left-1/2 transform -translate-x-1/2 text-center">
+                <a href="index.html" class="text-sm md:text-base tracking-[0.3em] uppercase font-semibold whitespace-nowrap">Vanessa Santuccione</a>
+            </div>
+            <div class="w-10"></div>
+        </div>
+    </header>
+
+    <div id="menu-overlay" class="fixed inset-0 bg-neutral-50 z-40 transform -translate-x-full transition-transform duration-500 ease-in-out flex flex-col justify-center items-center">
+        <nav class="space-y-8 text-center flex flex-col">
+            <a href="index.html" class="text-3xl md:text-4xl font-light tracking-widest hover:italic transition-all">Home</a>
+            <a href="portfolio.html" class="text-3xl md:text-4xl font-light tracking-widest hover:italic transition-all">Portfolio</a>
+            <a href="about.html" class="text-3xl md:text-4xl font-light tracking-widest hover:italic transition-all">About Me</a>
+            <a href="services.html" class="text-3xl md:text-4xl font-light tracking-widest hover:italic transition-all">Services</a>
+            <a href="contact.html" class="text-3xl md:text-4xl font-light tracking-widest hover:italic transition-all">Contact</a>
+        </nav>
+    </div>
+
+    <main class="flex-grow pt-32 px-6 md:px-12 max-w-screen-2xl mx-auto w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[60vh] mb-12">
+            <div class="relative h-full min-h-[400px] bg-neutral-200 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1000&q=80" alt="Vanessa Santuccione Portrait" class="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000">
+            </div>
+
+            <div class="space-y-8">
+                <h2 class="text-4xl md:text-5xl font-serif italic">Art that speaks before you read.</h2>
+                <div class="h-px w-20 bg-neutral-900"></div>
+                <p class="text-neutral-600 leading-relaxed font-light text-justify">
+                    I translate complex emotions into curated imagery. My work is not just collage; it is visual poetry designed to elevate brand narratives. Born in Milan and based in the digital ether, I specialize in abstract modern composition.
+                </p>
+                <p class="text-neutral-600 leading-relaxed font-light text-justify">
+                    My philosophy is rooted in the belief that minimalism is not the absence of elements, but the perfect presence of the essential. Every cut, layer, and texture is deliberate.
+                </p>
+                <div class="pt-8">
+                    <h3 class="text-xs font-bold tracking-widest uppercase mb-4">Select Clients</h3>
+                    <div class="grid grid-cols-2 gap-4 text-sm text-neutral-500 font-light">
+                        <span>Vogue Italia</span>
+                        <span>Harpers Bazaar</span>
+                        <span>Penguin Books</span>
+                        <span>Kinfolk</span>
+                        <span>Aesop</span>
+                        <span>Cereal Mag</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center py-8 border-t border-neutral-200 mt-auto">
+                <div class="flex justify-center gap-6 mb-4 text-neutral-400">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-behance"></i>
+            </div>
+            <p class="text-[10px] text-neutral-300 uppercase tracking-widest">© 2025 Vanessa Santuccione</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
