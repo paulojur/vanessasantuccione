@@ -39,13 +39,15 @@
     </header>
 
     <!-- Menu Global -->
-    <div id="menu-overlay" class="fixed inset-0 bg-neutral-50 z-40 transform -translate-x-full transition-transform duration-500 ease-in-out flex flex-col justify-center items-center">
-        <nav class="space-y-8 text-center flex flex-col">
-            <a href="index.html" class="text-3xl md:text-4xl font-light tracking-widest hover:italic transition-all">Home</a>
-            <a href="portfolio.html" class="text-3xl md:text-4xl font-light tracking-widest hover:italic transition-all">Portfolio</a>
-            <a href="about.html" class="text-3xl md:text-4xl font-light tracking-widest hover:italic transition-all">About Me</a>
-            <a href="services.html" class="text-3xl md:text-4xl font-light tracking-widest hover:italic transition-all">Services</a>
-            <a href="contact.html" class="text-3xl md:text-4xl font-light tracking-widest hover:italic transition-all">Contact</a>
+    <div id="menu-backdrop" class="fixed inset-0 bg-black/20 backdrop-blur-sm z-30 hidden opacity-0 transition-opacity duration-500" onclick="toggleMenu()"></div>
+
+    <div id="menu-sidebar" class="fixed top-0 left-0 h-full w-80 bg-neutral-50 z-40 transform -translate-x-full transition-transform duration-500 ease-out shadow-2xl border-r border-neutral-200 flex flex-col justify-start pt-28 pl-12">
+        <nav class="space-y-6 text-left flex flex-col">
+            <a href="index.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Home</a>
+            <a href="portfolio.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Portfolio</a>
+            <a href="about.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">About Me</a>
+            <a href="services.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Services</a>
+            <a href="contact.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Contact</a>
         </nav>
     </div>
 
