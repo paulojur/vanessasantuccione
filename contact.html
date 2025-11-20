@@ -71,20 +71,38 @@
                 <p class="text-sm tracking-widest uppercase text-neutral-400 mb-2">Inquiries</p>
                 <h2 class="text-3xl md:text-5xl font-serif italic">Let's start a conversation.</h2>
             </div>
+            
+            <div class="mt-20 mb-12 text-center space-y-2">
+                <p class="text-xl text-neutral-400 uppercase tracking-widest">Direct Email</p>
+                <a href="mailto:hello@vanessasantuccione.com" class="text-xl hover:italic transition-all">hello@vanessasantuccione.com</a>
+            </div>
+            <form class="space-y-8" name="contact" method="POST" data-netlify="true" onsubmit="event.preventDefault(); alert('Thank you. Vanessa will be in touch shortly.');">
+    
+                <p class="hidden">
+                    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                </p>
 
-            <form class="space-y-8" onsubmit="event.preventDefault(); alert('Thank you. Vanessa will be in touch shortly.');">
                 <div class="group">
-                    <label class="block text-xs uppercase tracking-widest text-neutral-400 mb-2 group-focus-within:text-neutral-900 transition-colors">Name</label>
-                    <input type="text" class="w-full bg-transparent border-b border-neutral-300 py-2 text-neutral-900 focus:outline-none focus:border-neutral-900 transition-colors" placeholder="Your Name">
+                    <label class="block text-xs uppercase tracking-widest text-neutral-400 mb-2 group-focus-within:text-neutral-900 transition-colors">Name *</label>
+                    <input type="text" name="name" required minlength="2" 
+                        class="w-full bg-transparent border-b border-neutral-300 py-2 text-neutral-900 focus:outline-none focus:border-neutral-900 transition-colors placeholder-neutral-300" 
+                        placeholder="Your Name">
                 </div>
+
                 <div class="group">
-                    <label class="block text-xs uppercase tracking-widest text-neutral-400 mb-2 group-focus-within:text-neutral-900 transition-colors">Email</label>
-                    <input type="email" class="w-full bg-transparent border-b border-neutral-300 py-2 text-neutral-900 focus:outline-none focus:border-neutral-900 transition-colors" placeholder="email@address.com">
+                    <label class="block text-xs uppercase tracking-widest text-neutral-400 mb-2 group-focus-within:text-neutral-900 transition-colors">Email *</label>
+                    <input type="email" name="email" required 
+                        class="w-full bg-transparent border-b border-neutral-300 py-2 text-neutral-900 focus:outline-none focus:border-neutral-900 transition-colors placeholder-neutral-300" 
+                        placeholder="email@address.com">
                 </div>
+
                 <div class="group">
-                    <label class="block text-xs uppercase tracking-widest text-neutral-400 mb-2 group-focus-within:text-neutral-900 transition-colors">Message</label>
-                    <textarea rows="4" class="w-full bg-transparent border-b border-neutral-300 py-2 text-neutral-900 focus:outline-none focus:border-neutral-900 transition-colors" placeholder="Tell me about your project..."></textarea>
+                    <label class="block text-xs uppercase tracking-widest text-neutral-400 mb-2 group-focus-within:text-neutral-900 transition-colors">Message *</label>
+                    <textarea name="message" rows="4" required minlength="10" 
+                            class="w-full bg-transparent border-b border-neutral-300 py-2 text-neutral-900 focus:outline-none focus:border-neutral-900 transition-colors placeholder-neutral-300 resize-none" 
+                            placeholder="Tell me about your project..."></textarea>
                 </div>
+
                 <div class="text-center pt-8">
                     <button type="submit" class="border border-neutral-900 px-12 py-4 text-sm uppercase tracking-[0.2em] hover:bg-neutral-900 hover:text-neutral-50 transition-all duration-300">
                         Send Request
@@ -92,10 +110,6 @@
                 </div>
             </form>
 
-            <div class="mt-20 mb-12 text-center space-y-2">
-                <p class="text-xs text-neutral-400 uppercase tracking-widest">Direct Email</p>
-                <a href="mailto:hello@vanessasantuccione.com" class="text-lg hover:italic transition-all">hello@vanessasantuccione.com</a>
-            </div>
         </div>
         
         <div class="text-center py-8 border-t border-neutral-200 mt-auto">
