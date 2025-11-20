@@ -8,16 +8,34 @@
     <!-- Fonts, Icons, CSS, JS Config -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Grey+Qo&family=Italiana&family=Lustria&family=Marcellus&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="styles.css">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Playfair Display', 'serif'] },
-                    colors: { neutral: { 50: '#F9FAFB', 100: '#F3F4F6', 900: '#171717' } }
+                    fontFamily: {
+                        // Texto corrido (Body) -> Marcellus (Substitui a padrão sans)
+                        sans: ['Marcellus', 'sans-serif'],
+                        // Títulos -> Cormorant Garamond
+                        serif: ['Cormorant Garamond', 'serif'],
+                        // Nome da Marca -> Bodoni Moda (ou Italiana se preferir)
+                        brand: ['Bodoni Moda', 'serif'],
+                        // CTAs e Assinaturas -> Grey Qo
+                        cta: ['Grey Qo', 'cursive'],
+                    },
+                    colors: {
+                        neutral: {
+                            50: '#F9FAFB', 
+                            100: '#F3F4F6', 
+                            900: '#171717', 
+                        }
+                    }
                 }
             }
         }
@@ -32,7 +50,7 @@
                 <i class="fa-solid fa-bars"></i>
             </button>
             <div class="absolute left-1/2 transform -translate-x-1/2 text-center">
-                <a href="index.html" class="text-sm md:text-base tracking-[0.3em] uppercase font-semibold whitespace-nowrap">Vanessa Santuccione</a>
+                <a href="index.html" class="text-xl md:text-3xl tracking-[0.3em] uppercase font-brand font-bold whitespace-nowrap">Vanessa Santuccione</a>
             </div>
             <div class="w-10"></div>
         </div>
@@ -58,37 +76,53 @@
         </div>
         
         <!-- Filtros -->
-        <div class="flex justify-center gap-6 mb-12 text-xs tracking-widest uppercase">
+        <!-- <div class="flex justify-center gap-6 mb-12 text-xs tracking-widest uppercase">
             <span class="border-b border-neutral-900 cursor-pointer">All</span>
             <span class="text-neutral-400 hover:text-neutral-900 cursor-pointer transition-colors">Editorial</span>
             <span class="text-neutral-400 hover:text-neutral-900 cursor-pointer transition-colors">Abstract</span>
             <span class="text-neutral-400 hover:text-neutral-900 cursor-pointer transition-colors">Branding</span>
-        </div>
+        </div> -->
 
         <!-- Masonry Grid -->
         <div class="columns-1 md:columns-2 lg:columns-3 gap-4 space-y-4 pb-20">
             <div class="break-inside-avoid mb-4 group relative">
-                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800" class="w-full grayscale group-hover:grayscale-0 transition-all duration-500">
+                <img src="images/ffern.jpg" class="w-full grayscale group-hover:grayscale-0 transition-all duration-500">
                 <p class="mt-2 text-xs text-neutral-500 opacity-0 group-hover:opacity-100 transition-opacity">Vogue Italia, 2024</p>
             </div>
             <div class="break-inside-avoid mb-4 group relative">
-                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800" class="w-full grayscale group-hover:grayscale-0 transition-all duration-500">
+                <img src="images/ethereal.jpg" class="w-full grayscale group-hover:grayscale-0 transition-all duration-500">
+                <p class="mt-2 text-xs text-neutral-500 opacity-0 group-hover:opacity-100 transition-opacity">Vogue Italia, 2024</p>
+            </div>
+            <div class="break-inside-avoid mb-4 group relative">
+                <img src="images/farm bota.jpg" class="w-full grayscale group-hover:grayscale-0 transition-all duration-500">
+                <p class="mt-2 text-xs text-neutral-500 opacity-0 group-hover:opacity-100 transition-opacity">Vogue Italia, 2024</p>
+            </div>
+            <div class="break-inside-avoid mb-4 group relative">
+                <img src="images/barquinho.jpg" class="w-full grayscale group-hover:grayscale-0 transition-all duration-500">
+                <p class="mt-2 text-xs text-neutral-500 opacity-0 group-hover:opacity-100 transition-opacity">Vogue Italia, 2024</p>
+            </div>
+            <div class="break-inside-avoid mb-4 group relative">
+                <img src="images/coragem.jpg" class="w-full grayscale group-hover:grayscale-0 transition-all duration-500">
+                <p class="mt-2 text-xs text-neutral-500 opacity-0 group-hover:opacity-100 transition-opacity">Vogue Italia, 2024</p>
+            </div>
+            <div class="break-inside-avoid mb-4 group relative">
+                <img src="images/free to be me.jpg" class="w-full grayscale group-hover:grayscale-0 transition-all duration-500">
                 <p class="mt-2 text-xs text-neutral-500 opacity-0 group-hover:opacity-100 transition-opacity">Liquid Dreams</p>
             </div>
             <div class="break-inside-avoid mb-4 group relative">
-                <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=800" class="w-full grayscale group-hover:grayscale-0 transition-all duration-500">
+                <img src="images/Goddess.jpg" class="w-full grayscale group-hover:grayscale-0 transition-all duration-500">
                 <p class="mt-2 text-xs text-neutral-500 opacity-0 group-hover:opacity-100 transition-opacity">Urban Decay Campaign</p>
             </div>
             <div class="break-inside-avoid mb-4 group relative">
-                <img src="https://images.unsplash.com/photo-1507643179173-39632099427c?w=800" class="w-full grayscale group-hover:grayscale-0 transition-all duration-500">
+                <img src="images/joy.jpg" class="w-full grayscale group-hover:grayscale-0 transition-all duration-500">
                 <p class="mt-2 text-xs text-neutral-500 opacity-0 group-hover:opacity-100 transition-opacity">Chateau Noir Label</p>
             </div>
             <div class="break-inside-avoid mb-4 group relative">
-                <img src="https://images.unsplash.com/photo-1549490349-8643362247b5?w=800" class="w-full grayscale group-hover:grayscale-0 transition-all duration-500">
+                <img src="images/saudade.jpg" class="w-full grayscale group-hover:grayscale-0 transition-all duration-500">
                 <p class="mt-2 text-xs text-neutral-500 opacity-0 group-hover:opacity-100 transition-opacity">Bloom & Wither</p>
             </div>
                 <div class="break-inside-avoid mb-4 group relative">
-                <img src="https://images.unsplash.com/photo-1500917293048-f46e8da14808?w=800" class="w-full grayscale group-hover:grayscale-0 transition-all duration-500">
+                <img src="images/time to rest.jpg" class="w-full grayscale group-hover:grayscale-0 transition-all duration-500">
                 <p class="mt-2 text-xs text-neutral-500 opacity-0 group-hover:opacity-100 transition-opacity">Silent Noise Cover</p>
             </div>
         </div>

@@ -6,16 +6,34 @@
     <title>Services | Vanessa Santuccione</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Grey+Qo&family=Italiana&family=Lustria&family=Marcellus&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <link rel="stylesheet" href="styles.css">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Playfair Display', 'serif'] },
-                    colors: { neutral: { 50: '#F9FAFB', 100: '#F3F4F6', 900: '#171717' } }
+                    fontFamily: {
+                        // Texto corrido (Body) -> Marcellus (Substitui a padrão sans)
+                        sans: ['Marcellus', 'sans-serif'],
+                        // Títulos -> Cormorant Garamond
+                        serif: ['Cormorant Garamond', 'serif'],
+                        // Nome da Marca -> Bodoni Moda (ou Italiana se preferir)
+                        brand: ['Bodoni Moda', 'serif'],
+                        // CTAs e Assinaturas -> Grey Qo
+                        cta: ['Grey Qo', 'cursive'],
+                    },
+                    colors: {
+                        neutral: {
+                            50: '#F9FAFB', 
+                            100: '#F3F4F6', 
+                            900: '#171717', 
+                        }
+                    }
                 }
             }
         }
@@ -29,7 +47,7 @@
                 <i class="fa-solid fa-bars"></i>
             </button>
             <div class="absolute left-1/2 transform -translate-x-1/2 text-center">
-                <a href="index.html" class="text-sm md:text-base tracking-[0.3em] uppercase font-semibold whitespace-nowrap">Vanessa Santuccione</a>
+                <a href="index.html" class="text-xl md:text-3xl tracking-[0.3em] uppercase font-brand font-bold whitespace-nowrap">Vanessa Santuccione</a>
             </div>
             <div class="w-10"></div>
         </div>
@@ -55,47 +73,47 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-neutral-200 border border-neutral-200 mb-24">
             <div class="group relative bg-neutral-50 aspect-square flex flex-col items-center justify-center p-8 hover:bg-white transition-colors duration-300 overflow-hidden">
                 <div class="absolute inset-0 flex items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-white z-10">
-                    <p class="text-xs text-neutral-500 text-center leading-relaxed">Curating visual stories for high-end fashion magazines.</p>
+                    <p class="text-md text-neutral-500 text-center leading-relaxed">Curating visual stories for high-end fashion magazines.</p>
                 </div>
                 <span class="uppercase tracking-widest text-xs md:text-sm text-center font-medium group-hover:opacity-0 transition-opacity">Editorial Narratives</span>
             </div>
             <div class="group relative bg-neutral-50 aspect-square flex flex-col items-center justify-center p-8 hover:bg-white transition-colors duration-300 overflow-hidden">
                 <div class="absolute inset-0 flex items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-white z-10">
-                    <p class="text-xs text-neutral-500 text-center leading-relaxed">Logos, aesthetic guidelines, and moodboards.</p>
+                    <p class="text-md text-neutral-500 text-center leading-relaxed">Logos, aesthetic guidelines, and moodboards.</p>
                 </div>
                 <span class="uppercase tracking-widest text-xs md:text-sm text-center font-medium group-hover:opacity-0 transition-opacity">Brand Identity</span>
             </div>
             <div class="group relative bg-neutral-50 aspect-square flex flex-col items-center justify-center p-8 hover:bg-white transition-colors duration-300 overflow-hidden">
                 <div class="absolute inset-0 flex items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-white z-10">
-                    <p class="text-xs text-neutral-500 text-center leading-relaxed">Product art that transforms items into objects of desire.</p>
+                    <p class="text-md text-neutral-500 text-center leading-relaxed">Product art that transforms items into objects of desire.</p>
                 </div>
                 <span class="uppercase tracking-widest text-xs md:text-sm text-center font-medium group-hover:opacity-0 transition-opacity">Packaging Design</span>
             </div>
             <div class="group relative bg-neutral-50 aspect-square flex flex-col items-center justify-center p-8 hover:bg-white transition-colors duration-300 overflow-hidden">
                 <div class="absolute inset-0 flex items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-white z-10">
-                    <p class="text-xs text-neutral-500 text-center leading-relaxed">Bespoke art for private collections.</p>
+                    <p class="text-md text-neutral-500 text-center leading-relaxed">Bespoke art for private collections.</p>
                 </div>
                 <span class="uppercase tracking-widest text-xs md:text-sm text-center font-medium group-hover:opacity-0 transition-opacity">Commissions</span>
             </div>
         </div>
 
         <div class="max-w-3xl mx-auto text-center mb-24">
-            <h3 class="text-xs font-bold tracking-widest uppercase mb-8">The Process</h3>
+            <h3 class="text-md font-bold tracking-widest uppercase mb-8">The Process</h3>
             <div class="flex flex-col md:flex-row justify-between gap-8 text-left md:text-center">
                 <div class="flex-1">
                     <span class="text-4xl font-serif italic text-neutral-200">01</span>
-                    <h4 class="font-medium mt-2 mb-2">Discovery</h4>
-                    <p class="text-xs text-neutral-500 leading-relaxed">We align on the emotional core of the project and the visual language required.</p>
+                    <h4 class="font-medium text-xl mt-2 mb-2">Discovery</h4>
+                    <p class="text-md text-neutral-500 leading-relaxed">We align on the emotional core of the project and the visual language required.</p>
                 </div>
                 <div class="flex-1">
                     <span class="text-4xl font-serif italic text-neutral-200">02</span>
-                    <h4 class="font-medium mt-2 mb-2">Composition</h4>
-                    <p class="text-xs text-neutral-500 leading-relaxed">I source and layer imagery, creating initial drafts for direction review.</p>
+                    <h4 class="font-medium text-xl mt-2 mb-2">Composition</h4>
+                    <p class="text-md text-neutral-500 leading-relaxed">I source and layer imagery, creating initial drafts for direction review.</p>
                 </div>
                 <div class="flex-1">
                     <span class="text-4xl font-serif italic text-neutral-200">03</span>
-                    <h4 class="font-medium mt-2 mb-2">Refinement</h4>
-                    <p class="text-xs text-neutral-500 leading-relaxed">Polishing details, textures, and color grading for the final export.</p>
+                    <h4 class="font-medium text-xl mt-2 mb-2">Refinement</h4>
+                    <p class="text-md text-neutral-500 leading-relaxed">Polishing details, textures, and color grading for the final export.</p>
                 </div>
             </div>
         </div>
