@@ -3,36 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me | Vanessa Santuccione</title>
+    <title>About | Vanessa Santuccione</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Grey+Qo&family=Italiana&family=Lustria&family=Marcellus&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <link rel="stylesheet" href="styles.css">
-
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        // Texto corrido (Body) -> Marcellus (Substitui a padrão sans)
                         sans: ['Marcellus', 'sans-serif'],
-                        // Títulos -> Cormorant Garamond
                         serif: ['Cormorant Garamond', 'serif'],
-                        // Nome da Marca -> Bodoni Moda (ou Italiana se preferir)
                         brand: ['Bodoni Moda', 'serif'],
-                        // CTAs e Assinaturas -> Grey Qo
                         cta: ['Grey Qo', 'cursive'],
                     },
                     colors: {
-                        neutral: {
-                            50: '#F9FAFB', 
-                            100: '#F3F4F6', 
-                            900: '#171717', 
-                        }
+                        neutral: { 50: '#F9FAFB', 100: '#F3F4F6', 900: '#171717' }
                     }
                 }
             }
@@ -58,49 +47,51 @@
     <div id="menu-sidebar" class="fixed top-0 left-0 h-full w-80 bg-neutral-50 z-40 transform -translate-x-full transition-transform duration-500 ease-out shadow-2xl border-r border-neutral-200 flex flex-col justify-start pt-28 pl-12">
         <nav class="space-y-6 text-left flex flex-col">
             <a href="index.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Home</a>
-            <a href="portfolio.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Portfolio</a>
-            <a href="about.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">About Me</a>
-            <a href="services.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Services</a>
-            <a href="contact.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Contact</a>
+            <a href="portfolio.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Selected Works</a>
+            <a href="about.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">The Artist</a>
+            <a href="services.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Expertise</a>
+            <a href="contact.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Inquiries</a>
         </nav>
     </div>
 
     <main class="flex-grow pt-32 px-6 md:px-12 max-w-screen-2xl mx-auto w-full">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[60vh] mb-12">
-            <div class="relative h-full min-h-[400px] bg-neutral-200 overflow-hidden">
+            <div class="relative h-full min-h-[500px] bg-neutral-200 overflow-hidden">
                 <img src="images/Vanessa Santuccione.png" alt="Vanessa Santuccione Portrait" class="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000">
             </div>
 
             <div class="space-y-8">
-                <h2 class="text-4xl md:text-5xl font-serif italic">Art that speaks before you read.</h2>
+                <h2 class="text-4xl md:text-5xl font-serif italic">The art of visual strategy.</h2>
                 <div class="h-px w-20 bg-neutral-900"></div>
-                <p class="text-neutral-600 leading-relaxed font-light text-left">
-                    I translate complex emotions into curated imagery. My work is not just collage; it is visual poetry designed to elevate brand narratives. Born in Milan and based in the digital ether, I specialize in abstract modern composition.
+                
+                <p class="text-neutral-800 text-lg leading-relaxed font-light text-left">
+                    Based in <strong>Pescara, Italy</strong>, I blend the rich heritage of European art direction with the speed of modern digital communication.
                 </p>
+                
                 <p class="text-neutral-600 leading-relaxed font-light text-left">
-                    My philosophy is rooted in the belief that minimalism is not the absence of elements, but the perfect presence of the essential. Every cut, layer, and texture is deliberate.
+                    I don't just create pretty images; I build <strong>visual ecosystems</strong>. My work helps luxury, fashion, and lifestyle brands cut through the noise by offering something AI cannot generate: <strong>soul, intention, and curated imperfection</strong>.
                 </p>
-                <div class="pt-8">
-                    <h3 class="text-xs font-bold tracking-widest uppercase mb-4">Select Clients</h3>
+                
+                <p class="text-neutral-600 leading-relaxed font-light text-left">
+                   Whether for an editorial spread or a product launch, my philosophy is rooted in the "Curated Chaos" — finding the harmony between disparate elements to tell a story that lingers in the consumer's mind.
+                </p>
+
+                <div class="pt-8 border-t border-neutral-200 mt-8">
+                    <h3 class="text-xs font-bold tracking-widest uppercase mb-4">Brand Concepts & Case Studies</h3>
                     <div class="grid grid-cols-2 gap-4 text-sm text-neutral-500 font-light">
-                        <span>Vogue Italia</span>
+                        <span>Vogue Italia (Editorial Study)</span>
                         <span>Harpers Bazaar</span>
-                        <span>Penguin Books</span>
+                        <span>Ffern (Campaign)</span>
                         <span>Kinfolk</span>
                         <span>Aesop</span>
-                        <span>Cereal Mag</span>
+                        <span>Farm Rio</span>
                     </div>
                 </div>
             </div>
         </div>
         
         <div class="text-center py-8 border-t border-neutral-200 mt-auto">
-                <div class="flex justify-center gap-6 mb-4 text-neutral-400">
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-pinterest"></i>
-                <i class="fab fa-behance"></i>
-            </div>
-            <p class="text-[10px] text-neutral-300 uppercase tracking-widest">© 2025 Vanessa Santuccione</p>
+            <p class="text-[10px] text-neutral-300 uppercase tracking-widest">© 2025 Vanessa Santuccione &middot; Italy</p>
         </div>
     </main>
     <script src="script.js"></script>
