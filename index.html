@@ -3,39 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanessa Santuccione | Digital Collage Artist</title>
-    <meta name="description" content="Visual Poetry and Abstract Modern Digital Collage by Vanessa Santuccione.">
+    <title>Vanessa Santuccione | Art Direction & Collage for Luxury Brands</title>
+    <meta name="description" content="High-end digital collage and art direction based in Pescara, Italy. Elevating brand narratives for fashion, editorial, and lifestyle clients.">
     
-    <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Grey+Qo&family=Italiana&family=Lustria&family=Marcellus&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <link rel="stylesheet" href="styles.css">
-
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        // Texto corrido (Body) -> Marcellus (Substitui a padrão sans)
                         sans: ['Marcellus', 'sans-serif'],
-                        // Títulos -> Cormorant Garamond
                         serif: ['Cormorant Garamond', 'serif'],
-                        // Nome da Marca -> Bodoni Moda (ou Italiana se preferir)
                         brand: ['Bodoni Moda', 'serif'],
-                        // CTAs e Assinaturas -> Grey Qo
                         cta: ['Grey Qo', 'cursive'],
                     },
                     colors: {
-                        neutral: {
-                            50: '#F9FAFB', 
-                            100: '#F3F4F6', 
-                            900: '#171717', 
-                        }
+                        neutral: { 50: '#F9FAFB', 100: '#F3F4F6', 900: '#171717' }
                     }
                 }
             }
@@ -44,7 +32,6 @@
 </head>
 <body class="bg-neutral-50 text-neutral-900 font-sans antialiased flex flex-col min-h-screen page-fade-in">
 
-    <!-- HEADER (Global) -->
     <header class="fixed top-0 left-0 w-full z-50 bg-neutral-50/95 backdrop-blur-sm border-b border-neutral-200/50 transition-all duration-300">
         <div class="max-w-screen-2xl mx-auto px-6 h-20 flex items-center justify-between relative">
             <button id="menu-btn" class="text-2xl focus:outline-none hover:opacity-70 transition-opacity z-50 w-10 text-left">
@@ -57,110 +44,164 @@
         </div>
     </header>
 
-    <!-- MENU OVERLAY (Global) -->
     <div id="menu-backdrop" class="fixed inset-0 bg-black/20 backdrop-blur-sm z-30 hidden opacity-0 transition-opacity duration-500" onclick="toggleMenu()"></div>
-
     <div id="menu-sidebar" class="fixed top-0 left-0 h-full w-80 bg-neutral-50 z-40 transform -translate-x-full transition-transform duration-500 ease-out shadow-2xl border-r border-neutral-200 flex flex-col justify-start pt-28 pl-12">
         <nav class="space-y-6 text-left flex flex-col">
             <a href="index.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Home</a>
-            <a href="portfolio.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Portfolio</a>
-            <a href="about.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">About Me</a>
-            <a href="services.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Services</a>
-            <a href="contact.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Contact</a>
+            <a href="portfolio.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Selected Works</a>
+            <a href="about.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">The Artist</a>
+            <a href="services.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Expertise</a>
+            <a href="contact.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Inquiries</a>
         </nav>
     </div>
 
-    <!-- MAIN CONTENT -->
     <main class="flex-grow pt-24 px-6 md:px-12 max-w-screen-2xl mx-auto w-full space-y-20 pb-12">
         
-        <!-- Hero -->
         <section class="flex flex-col justify-center items-center min-h-[15vh] text-center px-4">
-            <a href="contact.html" class="group relative inline-block mb-6">
-                <span class="text-4xl md:text-6xl font-light italic font-serif leading-tight hover:text-neutral-600 transition-colors duration-300">
-                    "Let's create visual poetry together"
-                </span>
-                <span class="absolute bottom-0 left-0 w-0 h-px bg-neutral-900 transition-all duration-500 group-hover:w-full"></span>
-            </a>
             
-            <p class="text-xs md:text-sm font-sans tracking-[0.4em] text-neutral-500 uppercase fade-in-up" style="animation-delay: 0.3s;">
-                digital emotions &nbsp;&middot;&nbsp; curated chaos
-            </p>
+            
+            <div class="flex flex-col md:flex-row gap-4 md:gap-8 justify-center items-center mt-8 fade-in-up" style="animation-delay: 0.3s;">
+                <span class="text-[10px] md:text-xs font-sans tracking-[0.4em] text-neutral-400 uppercase">
+                    Studio Italy
+                </span>
+                <span class="hidden md:inline-block text-neutral-300">|</span>
+                <span class="text-[10px] md:text-xs font-sans tracking-[0.4em] text-neutral-400 uppercase">
+                    Worldwide Commission
+                </span>
+            </div>
         </section>
 
-        <!-- Portfolio Teaser -->
         <section class="flex justify-center">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 <a href="portfolio.html" class="aspect-square overflow-hidden bg-neutral-200 group relative cursor-pointer">
-                    <img src="/images/ffern.jpg" alt="Personal project - Ffern" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
+                    <img src="/images/ffern.jpg" alt="Ffern Organic Campaign Concept" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
+                    <div class="absolute bottom-0 left-0 w-full p-4 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <p class="text-xs uppercase tracking-widest text-center">Ffern &middot; Concept</p>
+                    </div>
                 </a>
                 <a href="portfolio.html" class="aspect-square overflow-hidden bg-neutral-200 group relative cursor-pointer">
-                    <img src="images/farm bota.jpg" alt="Personal project - Farm" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
+                    <img src="images/farm bota.jpg" alt="Farm Rio Visual Identity Study" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
+                     <div class="absolute bottom-0 left-0 w-full p-4 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <p class="text-xs uppercase tracking-widest text-center">Farm Rio &middot; Editorial</p>
+                    </div>
                 </a>
                 <a href="portfolio.html" class="aspect-square overflow-hidden bg-neutral-200 group relative cursor-pointer">
-                    <img src="images/ethereal.jpg" alt="Personal project" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
+                    <img src="images/ethereal.jpg" alt="Ethereal Beauty Campaign" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
+                     <div class="absolute bottom-0 left-0 w-full p-4 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <p class="text-xs uppercase tracking-widest text-center">Beauty &middot; Campaign</p>
+                    </div>
                 </a>
                 <a href="portfolio.html" class="aspect-square overflow-hidden bg-neutral-200 group relative cursor-pointer">
-                    <img src="images/barquinho.jpg" alt="Personal project" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
+                    <img src="images/barquinho.jpg" alt="Travel Narrative" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
+                     <div class="absolute bottom-0 left-0 w-full p-4 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        <p class="text-xs uppercase tracking-widest text-center">Travel &middot; Narrative</p>
+                    </div>
                 </a>
             </div>
         </section>
-
-        <!-- About Teaser -->
-        <section class="flex justify-center">
-            <div class="max-w-md text-center space-y-8">
-                <h2 class="text-xl md:text-4xl uppercase tracking-widest font-serif italic font-light">Art that speaks before you read.</h2>
-                <p class="text-neutral-600 leading-relaxed text-xl md:text-3x1 font-serif italic font-light">
-                    I translate complex emotions into curated imagery. My work is not just collage; it is visual poetry designed to elevate brand narratives.
-                </p>
-                <div class="h-16 w-px bg-neutral-300 mx-auto"></div>
-                <a href="about.html" class="text-xl underline decoration-neutral-300 underline-offset-4 hover:text-neutral-900 uppercase tracking-widest">Read More</a>
-            </div>
-        </section>
-
-        <!-- Services Teaser -->
         <section>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-neutral-200 border border-neutral-200">
+                
                 <a href="services.html" class="group relative bg-neutral-50 aspect-square flex flex-col items-center justify-center p-8 hover:bg-white transition-colors duration-300 overflow-hidden">
-                    <div class="absolute inset-0 flex items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-75 bg-white z-10">
-                        <p class="text-md text-neutral-500 text-center leading-relaxed">Curating visual stories for high-end fashion magazines.</p>
-                    </div>
-                    <span class="uppercase tracking-widest text-md md:text-sm text-center font-medium group-hover:opacity-0 transition-opacity">Editorial Narratives</span>
+                    <span class="uppercase tracking-widest text-md md:text-sm text-center font-bold mb-2 md:mb-0 md:group-hover:mb-4 transition-all duration-500">
+                        POETIC DIGITAL COLLAGES
+                    </span>
+                    
+                    <p class="text-xs text-neutral-500 text-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 max-w-[150px]">
+                        High-impact visual narratives for global campaigns and product design.
+                    </p>
                 </a>
+
                 <a href="services.html" class="group relative bg-neutral-50 aspect-square flex flex-col items-center justify-center p-8 hover:bg-white transition-colors duration-300 overflow-hidden">
-                     <div class="absolute inset-0 flex items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-75 bg-white z-10">
-                        <p class="text-md text-neutral-500 text-center leading-relaxed">Crafting cohesive visual languages.</p>
-                    </div>
-                    <span class="uppercase tracking-widest text-md md:text-sm text-center font-medium group-hover:opacity-0 transition-opacity">Brand Identity</span>
+                    <span class="uppercase tracking-widest text-md md:text-sm text-center font-bold mb-2 md:mb-0 md:group-hover:mb-4 transition-all duration-500">
+                        IN-HOUSE WORKSHOPS
+                    </span>
+                    <p class="text-xs text-neutral-500 text-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 max-w-[150px]">
+                        Immersive collage experiences for team connection and corporate well-being.
+                    </p>
                 </a>
+
                 <a href="services.html" class="group relative bg-neutral-50 aspect-square flex flex-col items-center justify-center p-8 hover:bg-white transition-colors duration-300 overflow-hidden">
-                     <div class="absolute inset-0 flex items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-75 bg-white z-10">
-                        <p class="text-md text-neutral-500 text-center leading-relaxed">Transforming physical products.</p>
-                    </div>
-                    <span class="uppercase tracking-widest text-md md:text-sm text-center font-medium group-hover:opacity-0 transition-opacity">Packaging Design</span>
+                    <span class="uppercase tracking-widest text-md md:text-sm text-center font-bold mb-2 md:mb-0 md:group-hover:mb-4 transition-all duration-500">
+                        LUXURY LIVE ART
+                    </span>
+                    <p class="text-xs text-neutral-500 text-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 max-w-[150px]">
+                        Real-time artistic performance to elevate exclusive events and activations.
+                    </p>
                 </a>
+
                 <a href="services.html" class="group relative bg-neutral-50 aspect-square flex flex-col items-center justify-center p-8 hover:bg-white transition-colors duration-300 overflow-hidden">
-                     <div class="absolute inset-0 flex items-center justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-75 bg-white z-10">
-                        <p class="text-md text-neutral-500 text-center leading-relaxed">Bespoke digital collages.</p>
-                    </div>
-                    <span class="uppercase tracking-widest text-md md:text-sm text-center font-medium group-hover:opacity-0 transition-opacity">Custom Commissions</span>
+                    <span class="uppercase tracking-widest text-md md:text-sm text-center font-bold mb-2 md:mb-0 md:group-hover:mb-4 transition-all duration-500">
+                        FINE ART COMMISSIONS
+                    </span>
+                    <p class="text-xs text-neutral-500 text-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 max-w-[150px]">
+                        Bespoke conceptual artwork tailored for private collectors and corporate spaces.
+                    </p>
                 </a>
+
             </div>
         </section>
+        <section class="w-full mt-24 mb-24 max-w-screen-2xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-0 border border-neutral-100 shadow-sm bg-neutral-50">
+                
+                <div class="relative w-full h-[650px] md:h-auto overflow-hidden bg-neutral-200 group">
+                    
+                    <img src="images/Vanessa Santuccione.png" 
+                         alt="Vanessa Santuccione Portrait" 
+                         class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:scale-105 group-hover:grayscale-0">
+                    
+                    <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/50 z-10 pointer-events-none"></div>
 
-        <!-- Footer -->
-        <footer class="text-center py-12 border-t border-neutral-200">
-            <p class="text-2xl md:text-3xl font-light mb-8 italic">Ready to define your aesthetic?</p>
-            <div class="mb-12">
-                <a href="contact.html" class="inline-block border border-neutral-900 px-12 py-4 text-5xl lowercase font-cta hover:bg-neutral-900 hover:text-neutral-50 transition-all duration-300">
-                 get in touch
-                </a>
+                    <div class="absolute inset-0 flex flex-col justify-between items-center py-10 z-20">
+                        
+                        <h3 class="text-white text-center uppercase font-brand transition-all duration-500">
+                            <span class="block md:hidden text-2xl tracking-[0.2em] leading-relaxed">
+                                Vanessa<br>Santuccione
+                            </span>
+                            <span class="hidden md:block text-2xl lg:text-3xl tracking-[0.8em] pl-[0.8em]">
+                                Vanessa<br>Santuccione
+                            </span>
+                        </h3>
+
+                        <div class="flex flex-col gap-4 w-full px-12 items-center">
+                            <a href="contact.html" class="w-full max-w-xs text-center py-3 border border-white/70 text-white text-xs tracking-[0.2em] uppercase hover:bg-white hover:text-black hover:border-white transition-all duration-300 backdrop-blur-sm">
+                                Get in Touch
+                            </a>
+                            <a href="portfolio.html" class="w-full max-w-xs text-center py-3 border border-white/70 text-white text-xs tracking-[0.2em] uppercase hover:bg-white hover:text-black hover:border-white transition-all duration-300 backdrop-blur-sm">
+                                Selected Works
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-center p-12 md:p-20 bg-neutral-50/50">
+                    
+                    <h2 class="text-4xl md:text-5xl font-serif italic text-neutral-900 mb-8">
+                        The art of visual strategy.
+                    </h2>
+                    
+                    <hr class="w-12 border-t border-neutral-400 mb-10">
+
+                    <div class="text-neutral-600 font-light text-lg md:text-xl leading-loose space-y-8 text-justify md:text-left">
+                        <p>
+                            <strong>Vanessa Santuccione</strong> is a Brazilian digital artist based in Italy, known for her visionary collages that collaborate with fashion and luxury brands worldwide. With a background in Law and a multidisciplinary practice spanning painting, poetry, and analog collage, she has exhibited internationally and performed live art in Europe.
+                        </p>
+                        <p>
+                            Her work embraces chaos as perfect order, transforming the unseen into <strong>poetic visual narratives</strong>.
+                        </p>
+                    </div>
+
+                </div>
+
             </div>
+        </section>
+        <footer class="text-center py-12 border-t border-neutral-200">
             <div class="flex justify-center gap-8 text-xl text-neutral-400">
                 <a href="#" class="hover:text-neutral-900 transition-colors"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="hover:text-neutral-900 transition-colors"><i class="fab fa-pinterest"></i></a>
-                <a href="#" class="hover:text-neutral-900 transition-colors"><i class="fab fa-behance"></i></a>
+                <a href="#" class="hover:text-neutral-900 transition-colors"><i class="fab fa-linkedin"></i></a> <a href="#" class="hover:text-neutral-900 transition-colors"><i class="fab fa-behance"></i></a>
             </div>
-            <p class="mt-10 text-[10px] text-neutral-300 uppercase tracking-widest">© 2025 Vanessa Santuccione</p>
+            <p class="mt-10 text-[10px] text-neutral-300 uppercase tracking-widest">© 2025 Vanessa Santuccione &middot; ITALY</p>
         </footer>
     </main>
 
