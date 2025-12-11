@@ -66,12 +66,15 @@
                 <a href="mailto:contact@vanessasantuccione.com" class="text-xl hover:italic transition-all block mt-4">contact@vanessasantuccione.com</a>
             </div>
 
-            <form class="space-y-8" name="contact" method="POST" data-netlify="true" action="/success.html">
-                <!-- NETLIFY REQUIRED HIDDEN INPUT -->
-                <input type="hidden" name="form-name" value="contact" />
+            <form class="space-y-8" action="https://api.web3forms.com/submit" method="POST">
                 
-                <!-- HONEYPOT (SPAM PROTECTION) -->
-                <p class="hidden"><label>Don't fill this out if you're human: <input name="bot-field" /></label></p>
+                <input type="hidden" name="access_key" value="d40f8866-db0c-4737-abd3-afa58148c04b">
+                
+                <input type="hidden" name="subject" value="New Inquiry via Website - Vanessa Santuccione">
+                
+                <input type="hidden" name="redirect" value="https://vanessasantuccione.com/success.html">
+
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
                 <div class="group">
                     <label class="block text-xs uppercase tracking-widest text-neutral-400 mb-2 group-focus-within:text-neutral-900 transition-colors">Name / Company *</label>
@@ -105,7 +108,7 @@
                     </button>
                 </div>
             </form>
-        </div>
+            </div>
         
         <div class="text-center py-8 border-t border-neutral-200 mt-auto">
             <p class="text-[10px] text-neutral-300 uppercase tracking-widest">© 2025 Vanessa Santuccione</p>
