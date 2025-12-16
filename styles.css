@@ -22,3 +22,14 @@
         transform: translateY(0); 
     }
 }
+/* Desativa o grayscale em dispositivos touch ou telas menores que 1024px */
+@media (max-width: 1024px), (pointer: coarse) {
+    .grayscale, .md\:grayscale {
+        filter: grayscale(0) !important;
+    }
+    
+    /* Garante que o efeito de zoom ou opacidade continue funcionando no toque */
+    .group:active img {
+        transform: scale(1.05);
+    }
+}

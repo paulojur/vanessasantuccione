@@ -9,6 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Grey+Qo&family=Italiana&family=Lustria&family=Marcellus&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BNHNV4QRP3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BNHNV4QRP3');
+</script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -66,11 +75,13 @@
                 <a href="mailto:contact@vanessasantuccione.com" class="text-xl hover:italic transition-all block mt-4">contact@vanessasantuccione.com</a>
             </div>
 
-            <form class="space-y-8" action="https://api.web3forms.com/submit" method="POST">
+            <form class="space-y-8" action="https://api.web3forms.com/submit" method="POST" id="form-contato">
                 
                 <input type="hidden" name="access_key" value="d40f8866-db0c-4737-abd3-afa58148c04b">
                 
-                <input type="hidden" name="subject" value="New Inquiry via Website - Vanessa Santuccione">
+                <input type="hidden" name="subject" id="email-subject" value="New Message From Studio Vanessa Santuccione">
+
+                <input type="hidden" name="from_name" value="Studio Vanessa Santuccione">
                 
                 <input type="hidden" name="redirect" value="https://vanessasantuccione.com/success.html">
 
@@ -78,7 +89,7 @@
 
                 <div class="group">
                     <label class="block text-xs uppercase tracking-widest text-neutral-400 mb-2 group-focus-within:text-neutral-900 transition-colors">Name / Company *</label>
-                    <input type="text" name="name" required minlength="2" class="w-full bg-transparent border-b border-neutral-300 py-2 text-neutral-900 focus:outline-none focus:border-neutral-900 transition-colors placeholder-neutral-300" placeholder="Your Name or Brand">
+                    <input type="text" id="input-name" name="name" required minlength="2" class="w-full bg-transparent border-b border-neutral-300 py-2 text-neutral-900 focus:outline-none focus:border-neutral-900 transition-colors placeholder-neutral-300" placeholder="Your Name or Brand">
                 </div>
 
                 <div class="group">
@@ -115,5 +126,17 @@
         </div>
     </main>
     <script src="script.js"></script>
+    <script>
+    const form = document.getElementById('form-contato');
+    const nameInput = document.getElementById('input-name');
+    const subjectInput = document.getElementById('email-subject');
+
+    form.addEventListener('submit', function() {
+        // Pega o nome que a pessoa digitou e coloca no assunto
+        if(nameInput.value) {
+            subjectInput.value = "New Inquiry from: " + nameInput.value;
+        }
+    });
+    </script>
 </body>
 </html>
