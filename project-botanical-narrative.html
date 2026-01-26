@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botanical Narrative | Vanessa Santuccione</title>
+    <meta name="description"
+        content="Botanical Narrative - Organic brand campaign digital collage for luxury perfume by Vanessa Santuccione.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://vanessasantuccione.com/project-botanical-narrative.html">
+    <meta property="og:title" content="Botanical Narrative | Vanessa Santuccione">
+    <meta property="og:description"
+        content="Organic brand campaign digital collage for luxury perfume by Vanessa Santuccione.">
+    <meta property="og:image" content="https://vanessasantuccione.com/images/ffern/ffern.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://vanessasantuccione.com/project-botanical-narrative.html">
+    <meta property="twitter:title" content="Botanical Narrative | Vanessa Santuccione">
+    <meta property="twitter:description"
+        content="Organic brand campaign digital collage for luxury perfume by Vanessa Santuccione.">
+    <meta property="twitter:image" content="https://vanessasantuccione.com/images/ffern/ffern.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Grey+Qo&family=Italiana&family=Lustria&family=Marcellus&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNHNV4QRP3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-BNHNV4QRP3');
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Marcellus', 'sans-serif'],
+                        serif: ['Cormorant Garamond', 'serif'],
+                        brand: ['Bodoni Moda', 'serif'],
+                        cta: ['Grey Qo', 'cursive'],
+                    },
+                    colors: {
+                        neutral: { 50: '#F9FAFB', 100: '#F3F4F6', 900: '#171717' }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="icon" type="image/webp" href="images/artist/Vanessa.webp">
+</head>
+
+<body class="bg-neutral-50 text-neutral-900 font-sans antialiased flex flex-col min-h-screen page-fade-in">
+
+    <header
+        class="fixed top-0 left-0 w-full z-50 bg-neutral-50/95 backdrop-blur-sm border-b border-neutral-200/50 transition-all duration-300">
+        <div class="max-w-screen-2xl mx-auto px-6 h-20 flex items-center justify-between relative">
+            <button id="menu-btn" onclick="toggleMenu()"
+                class="text-2xl focus:outline-none hover:opacity-70 transition-opacity z-50 w-10 text-left">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="absolute left-1/2 transform -translate-x-1/2 text-center">
+                <a href="index.html"
+                    class="text-xl md:text-3xl tracking-[0.3em] uppercase font-brand font-medium">Vanessa
+                    Santuccione</a>
+            </div>
+            <div class="w-10"></div>
+        </div>
+    </header>
+
+    <div id="menu-backdrop"
+        class="fixed inset-0 bg-black/20 backdrop-blur-sm z-30 hidden opacity-0 transition-opacity duration-500"
+        onclick="toggleMenu()"></div>
+    <div id="menu-sidebar"
+        class="fixed top-0 left-0 h-full w-80 bg-neutral-50 z-40 transform -translate-x-full transition-transform duration-500 ease-out shadow-2xl border-r border-neutral-200 flex flex-col justify-start pt-28 pl-12">
+        <nav class="space-y-6 text-left flex flex-col">
+            <a href="index.html"
+                class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Home</a>
+            <a href="portfolio.html"
+                class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Selected
+                Works</a>
+            <a href="about.html"
+                class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">The
+                Artist</a>
+            <a href="services.html"
+                class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Expertise</a>
+            <a href="contact.html"
+                class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Inquiries</a>
+        </nav>
+    </div>
+
+    <main class="flex-grow pt-32 px-6 md:px-12 max-w-screen-2xl mx-auto w-full pb-20">
+
+        <div class="mb-12">
+            <a href="portfolio.html"
+                class="text-xs uppercase tracking-widest text-neutral-400 hover:text-neutral-900 transition-colors">
+                <i class="fa-solid fa-arrow-left mr-2"></i> Back to Portfolio
+            </a>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-12 lg:gap-20">
+            <!-- Left Column: Content -->
+            <div class="w-full lg:w-1/3 flex flex-col">
+                <div>
+                    <span class="text-[10px] tracking-[0.3em] uppercase text-neutral-400 mb-4 block">Organic
+                        Campaign</span>
+                    <h1 class="text-4xl md:text-5xl font-serif italic mb-8 text-neutral-900 leading-tight">Botanical
+                        Narrative</h1>
+
+                    <div class="space-y-10">
+                        <div>
+                            <h2
+                                class="text-xs font-bold uppercase tracking-widest text-neutral-900 mb-3 border-b border-neutral-200 pb-1 inline-block">
+                                The Brief</h2>
+                            <p class="text-base font-light text-neutral-600 leading-relaxed text-justify">A digital
+                                collage created to visually express Ffern’s seasonal fragrance through organic elements
+                                and a soft, sensory-driven composition.</p>
+                        </div>
+                        <div>
+                            <h2
+                                class="text-xs font-bold uppercase tracking-widest text-neutral-900 mb-3 border-b border-neutral-200 pb-1 inline-block">
+                                The Concept</h2>
+                            <p class="text-base font-light text-neutral-600 leading-relaxed text-justify">A natural
+                                harmony of botanicals and texture, capturing the purity and quiet elegance of Ffern’s
+                                perfume in a poetic visual narrative.</p>
+                        </div>
+
+                        <div class="pt-8">
+                            <a href="contact.html"
+                                class="group inline-flex items-center gap-3 px-6 py-3 border border-neutral-200 text-xs uppercase tracking-[0.2em] text-neutral-900 hover:border-neutral-900 hover:bg-neutral-900 hover:text-white transition-all duration-500">
+                                <span>Start similar project</span>
+                                <i
+                                    class="fa-solid fa-arrow-right text-[10px] transform group-hover:translate-x-1 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Images -->
+            <div class="w-full lg:w-2/3 space-y-8">
+                <div class="w-full bg-neutral-50 border border-neutral-100 p-4 shadow-sm">
+                    <img src="images/ffern/ffern.webp" alt="Botanical Narrative Full Artwork"
+                        class="w-full h-auto object-contain">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-neutral-50 border border-neutral-100 p-2">
+                        <img src="images/ffern/mockup-ffern1.webp" alt="Detail 1" class="w-full h-auto object-contain">
+                    </div>
+                    <div class="bg-neutral-50 border border-neutral-100 p-2">
+                        <img src="images/ffern/mockup-ffern2.webp" alt="Detail 2" class="w-full h-auto object-contain">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-center py-12 border-t border-neutral-200 mt-auto">
+        <div class="flex justify-center gap-8 text-xl text-neutral-400">
+            <a href="https://www.instagram.com/vanessasantuccione" class="hover:text-neutral-900 transition-colors"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/vanessasantuccione" class="hover:text-neutral-900 transition-colors"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://www.behance.net/vanessasantuccione" class="hover:text-neutral-900 transition-colors"><i
+                    class="fab fa-behance"></i></a>
+        </div>
+        <p class="mt-10 text-[10px] text-neutral-300 uppercase tracking-widest">© 2025 Vanessa Santuccione &middot;
+            ITALY</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            const menuSidebar = document.getElementById('menu-sidebar');
+            const menuBackdrop = document.getElementById('menu-backdrop');
+
+            if (menuSidebar.classList.contains('-translate-x-full')) {
+                menuSidebar.classList.remove('-translate-x-full');
+                menuBackdrop.classList.remove('hidden');
+                setTimeout(() => { menuBackdrop.classList.remove('opacity-0'); }, 10);
+            } else {
+                menuSidebar.classList.add('-translate-x-full');
+                menuBackdrop.classList.add('opacity-0');
+                setTimeout(() => { menuBackdrop.classList.add('hidden'); }, 500);
+            }
+        }
+    </script>
+</body>
+
+</html>
