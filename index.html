@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanessa Santuccione | Art Direction & Collage for Luxury Brands</title>
-    <meta name="description" content="High-end digital collage and art direction based in Pescara, Italy. Elevating brand narratives for fashion, editorial, and lifestyle clients.">
-    
+    <meta name="description"
+        content="High-end digital collage and art direction based in Pescara, Italy. Elevating brand narratives for fashion, editorial, and lifestyle clients.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vanessasantuccione.com/">
+    <meta property="og:title" content="Vanessa Santuccione | Art Direction & Collage for Luxury Brands">
+    <meta property="og:description"
+        content="High-end digital collage and art direction based in Pescara, Italy. Elevating brand narratives for fashion, editorial, and lifestyle clients.">
+    <meta property="og:image" content="https://vanessasantuccione.com/images/artist/Vanessa.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://vanessasantuccione.com/">
+    <meta property="twitter:title" content="Vanessa Santuccione | Art Direction & Collage for Luxury Brands">
+    <meta property="twitter:description"
+        content="High-end digital collage and art direction based in Pescara, Italy. Elevating brand narratives for fashion, editorial, and lifestyle clients.">
+    <meta property="twitter:image" content="https://vanessasantuccione.com/images/artist/Vanessa.webp">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Grey+Qo&family=Italiana&family=Lustria&family=Marcellus&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Grey+Qo&family=Italiana&family=Lustria&family=Marcellus&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNHNV4QRP3"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-BNHNV4QRP3');
+        gtag('config', 'G-BNHNV4QRP3');
     </script>
     <script type="application/ld+json">
         {
@@ -50,37 +70,53 @@
         }
     </script>
 </head>
+
 <body class="bg-neutral-50 text-neutral-900 font-sans antialiased flex flex-col min-h-screen page-fade-in">
 
-    <header class="fixed top-0 left-0 w-full z-50 bg-neutral-50/95 backdrop-blur-sm border-b border-neutral-200/50 transition-all duration-300">
+    <header
+        class="fixed top-0 left-0 w-full z-50 bg-neutral-50/95 backdrop-blur-sm border-b border-neutral-200/50 transition-all duration-300">
         <div class="max-w-screen-2xl mx-auto px-6 h-20 flex items-center justify-between relative">
-            <button id="menu-btn" class="text-2xl focus:outline-none hover:opacity-70 transition-opacity z-50 w-10 text-left">
+            <button id="menu-btn"
+                class="text-2xl focus:outline-none hover:opacity-70 transition-opacity z-50 w-10 text-left">
                 <i class="fa-solid fa-bars"></i>
             </button>
-            <div class="absolute left-1/2 transform -translate-x-1/2 text-center">
-                <a href="index.html" class="text-xl md:text-3xl tracking-[0.3em] uppercase font-brand font-medium">Vanessa Santuccione</a>
-            </div>
+            <h1 class="absolute left-1/2 transform -translate-x-1/2 text-center">
+                <a href="index.html"
+                    class="text-xl md:text-3xl tracking-[0.3em] uppercase font-brand font-medium">Vanessa
+                    Santuccione</a>
+            </h1>
             <div class="w-10"></div>
         </div>
     </header>
 
-    <div id="menu-backdrop" class="fixed inset-0 bg-black/20 backdrop-blur-sm z-30 hidden opacity-0 transition-opacity duration-500" onclick="toggleMenu()"></div>
-    <div id="menu-sidebar" class="fixed top-0 left-0 h-full w-80 bg-neutral-50 z-40 transform -translate-x-full transition-transform duration-500 ease-out shadow-2xl border-r border-neutral-200 flex flex-col justify-start pt-28 pl-12">
+    <div id="menu-backdrop"
+        class="fixed inset-0 bg-black/20 backdrop-blur-sm z-30 hidden opacity-0 transition-opacity duration-500"
+        onclick="toggleMenu()"></div>
+    <div id="menu-sidebar"
+        class="fixed top-0 left-0 h-full w-80 bg-neutral-50 z-40 transform -translate-x-full transition-transform duration-500 ease-out shadow-2xl border-r border-neutral-200 flex flex-col justify-start pt-28 pl-12">
         <nav class="space-y-6 text-left flex flex-col">
-            <a href="index.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Home</a>
-            <a href="portfolio.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Selected Works</a>
-            <a href="about.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">The Artist</a>
-            <a href="services.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Expertise</a>
-            <a href="contact.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Inquiries</a>
+            <a href="index.html"
+                class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Home</a>
+            <a href="portfolio.html"
+                class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Selected
+                Works</a>
+            <a href="about.html"
+                class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">The
+                Artist</a>
+            <a href="services.html"
+                class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Expertise</a>
+            <a href="contact.html"
+                class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Inquiries</a>
         </nav>
     </div>
 
     <main class="flex-grow pt-24 px-6 md:px-12 max-w-screen-2xl mx-auto w-full space-y-20 pb-12">
-        
+
         <section class="flex flex-col justify-center items-center min-h-[15vh] text-center px-4">
-            
-            
-            <div class="flex flex-col md:flex-row gap-4 md:gap-8 justify-center items-center mt-8 fade-in-up" style="animation-delay: 0.3s;">
+
+
+            <div class="flex flex-col md:flex-row gap-4 md:gap-8 justify-center items-center mt-8 fade-in-up"
+                style="animation-delay: 0.3s;">
                 <span class="text-[10px] md:text-xs font-sans tracking-[0.4em] text-neutral-400 uppercase">
                     Studio Italy
                 </span>
@@ -93,27 +129,39 @@
 
         <section class="flex justify-center">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                <a href="portfolio.html" class="aspect-square overflow-hidden bg-neutral-200 group relative cursor-pointer">
-                    <img src="/images/ffern/ffern.webp" alt="Ffern Organic Campaign Concept" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
-                    <div class="absolute bottom-0 left-0 w-full p-4 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <a href="portfolio.html"
+                    class="aspect-square overflow-hidden bg-neutral-200 group relative cursor-pointer">
+                    <img src="/images/ffern/ffern.webp" alt="Ffern Organic Campaign Concept"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
+                    <div
+                        class="absolute bottom-0 left-0 w-full p-4 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                         <p class="text-xs uppercase tracking-widest text-center">Ffern &middot; Concept</p>
                     </div>
                 </a>
-                <a href="portfolio.html" class="aspect-square overflow-hidden bg-neutral-200 group relative cursor-pointer">
-                    <img src="images/farm/farm bota.webp" alt="Farm Rio Visual Identity Study" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
-                     <div class="absolute bottom-0 left-0 w-full p-4 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <a href="portfolio.html"
+                    class="aspect-square overflow-hidden bg-neutral-200 group relative cursor-pointer">
+                    <img src="images/farm/farm bota.webp" alt="Farm Rio Visual Identity Study"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
+                    <div
+                        class="absolute bottom-0 left-0 w-full p-4 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                         <p class="text-xs uppercase tracking-widest text-center">Farm Rio &middot; Editorial</p>
                     </div>
                 </a>
-                <a href="portfolio.html" class="aspect-square overflow-hidden bg-neutral-200 group relative cursor-pointer">
-                    <img src="images/gucci-ethereal/ethereal.webp" alt="Ethereal Beauty Campaign" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
-                     <div class="absolute bottom-0 left-0 w-full p-4 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <a href="portfolio.html"
+                    class="aspect-square overflow-hidden bg-neutral-200 group relative cursor-pointer">
+                    <img src="images/gucci-ethereal/ethereal.webp" alt="Ethereal Beauty Campaign"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
+                    <div
+                        class="absolute bottom-0 left-0 w-full p-4 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                         <p class="text-xs uppercase tracking-widest text-center">Beauty &middot; Campaign</p>
                     </div>
                 </a>
-                <a href="portfolio.html" class="aspect-square overflow-hidden bg-neutral-200 group relative cursor-pointer">
-                    <img src="images/barquinho/barquinho.webp" alt="Travel Narrative" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
-                     <div class="absolute bottom-0 left-0 w-full p-4 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                <a href="portfolio.html"
+                    class="aspect-square overflow-hidden bg-neutral-200 group relative cursor-pointer">
+                    <img src="images/barquinho/barquinho.webp" alt="Travel Narrative"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 transform group-hover:scale-105">
+                    <div
+                        class="absolute bottom-0 left-0 w-full p-4 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                         <p class="text-xs uppercase tracking-widest text-center">Travel &middot; Narrative</p>
                     </div>
                 </a>
@@ -121,40 +169,52 @@
         </section>
         <section>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-neutral-200 border border-neutral-200">
-                
-                <a href="services.html" class="group relative bg-neutral-50 aspect-square flex flex-col items-center justify-center p-8 hover:bg-white transition-colors duration-300 overflow-hidden">
-                    <span class="uppercase tracking-widest text-md md:text-sm text-center font-bold mb-2 md:mb-0 md:group-hover:mb-4 transition-all duration-500">
+
+                <a href="services.html"
+                    class="group relative bg-neutral-50 aspect-square flex flex-col items-center justify-center p-8 hover:bg-white transition-colors duration-300 overflow-hidden">
+                    <span
+                        class="uppercase tracking-widest text-md md:text-sm text-center font-bold mb-2 md:mb-0 md:group-hover:mb-4 transition-all duration-500">
                         POETIC DIGITAL COLLAGES
                     </span>
-                    
-                    <p class="text-xs text-neutral-500 text-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 max-w-[150px]">
+
+                    <p
+                        class="text-xs text-neutral-500 text-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 max-w-[150px]">
                         High-impact visual narratives for global campaigns and product design.
                     </p>
                 </a>
 
-                <a href="services.html" class="group relative bg-neutral-50 aspect-square flex flex-col items-center justify-center p-8 hover:bg-white transition-colors duration-300 overflow-hidden">
-                    <span class="uppercase tracking-widest text-md md:text-sm text-center font-bold mb-2 md:mb-0 md:group-hover:mb-4 transition-all duration-500">
+                <a href="services.html"
+                    class="group relative bg-neutral-50 aspect-square flex flex-col items-center justify-center p-8 hover:bg-white transition-colors duration-300 overflow-hidden">
+                    <span
+                        class="uppercase tracking-widest text-md md:text-sm text-center font-bold mb-2 md:mb-0 md:group-hover:mb-4 transition-all duration-500">
                         IN-HOUSE WORKSHOPS
                     </span>
-                    <p class="text-xs text-neutral-500 text-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 max-w-[150px]">
+                    <p
+                        class="text-xs text-neutral-500 text-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 max-w-[150px]">
                         Immersive collage experiences for team connection and corporate well-being.
                     </p>
                 </a>
 
-                <a href="services.html" class="group relative bg-neutral-50 aspect-square flex flex-col items-center justify-center p-8 hover:bg-white transition-colors duration-300 overflow-hidden">
-                    <span class="uppercase tracking-widest text-md md:text-sm text-center font-bold mb-2 md:mb-0 md:group-hover:mb-4 transition-all duration-500">
+                <a href="services.html"
+                    class="group relative bg-neutral-50 aspect-square flex flex-col items-center justify-center p-8 hover:bg-white transition-colors duration-300 overflow-hidden">
+                    <span
+                        class="uppercase tracking-widest text-md md:text-sm text-center font-bold mb-2 md:mb-0 md:group-hover:mb-4 transition-all duration-500">
                         LUXURY LIVE ART
                     </span>
-                    <p class="text-xs text-neutral-500 text-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 max-w-[150px]">
+                    <p
+                        class="text-xs text-neutral-500 text-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 max-w-[150px]">
                         Real-time artistic performance to elevate exclusive events and activations.
                     </p>
                 </a>
 
-                <a href="services.html" class="group relative bg-neutral-50 aspect-square flex flex-col items-center justify-center p-8 hover:bg-white transition-colors duration-300 overflow-hidden">
-                    <span class="uppercase tracking-widest text-md md:text-sm text-center font-bold mb-2 md:mb-0 md:group-hover:mb-4 transition-all duration-500">
+                <a href="services.html"
+                    class="group relative bg-neutral-50 aspect-square flex flex-col items-center justify-center p-8 hover:bg-white transition-colors duration-300 overflow-hidden">
+                    <span
+                        class="uppercase tracking-widest text-md md:text-sm text-center font-bold mb-2 md:mb-0 md:group-hover:mb-4 transition-all duration-500">
                         FINE ART COMMISSIONS
                     </span>
-                    <p class="text-xs text-neutral-500 text-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 max-w-[150px]">
+                    <p
+                        class="text-xs text-neutral-500 text-center opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-500 max-w-[150px]">
                         Bespoke conceptual artwork tailored for private collectors and corporate spaces.
                     </p>
                 </a>
@@ -163,17 +223,18 @@
         </section>
         <section class="w-full mt-24 mb-24 max-w-screen-2xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-0 border border-neutral-100 shadow-sm bg-neutral-50">
-                
+
                 <div class="relative w-full h-[650px] md:h-auto overflow-hidden bg-neutral-200 group">
-                    
-                    <img src="images/artist/Vanessa.webp" 
-                         alt="Vanessa Santuccione Portrait" 
-                         class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:scale-105 group-hover:grayscale-0">
-                    
-                    <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/50 z-10 pointer-events-none"></div>
+
+                    <img src="images/artist/Vanessa.webp" alt="Vanessa Santuccione Portrait"
+                        class="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:scale-105 group-hover:grayscale-0">
+
+                    <div
+                        class="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/50 z-10 pointer-events-none">
+                    </div>
 
                     <div class="absolute inset-0 flex flex-col justify-between items-center py-10 z-20">
-                        
+
                         <h3 class="text-white text-center uppercase font-brand transition-all duration-500">
                             <span class="block md:hidden text-2xl tracking-[0.2em] leading-relaxed">
                             </span>
@@ -182,10 +243,12 @@
                         </h3>
 
                         <div class="flex flex-col gap-4 w-full px-12 items-center">
-                            <a href="contact.html" class="w-full max-w-xs text-center py-3 border border-white/70 text-white text-xs tracking-[0.2em] uppercase hover:bg-white hover:text-black hover:border-white transition-all duration-300 backdrop-blur-sm">
+                            <a href="contact.html"
+                                class="w-full max-w-xs text-center py-3 border border-white/70 text-white text-xs tracking-[0.2em] uppercase hover:bg-white hover:text-black hover:border-white transition-all duration-300 backdrop-blur-sm">
                                 Get in Touch
                             </a>
-                            <a href="portfolio.html" class="w-full max-w-xs text-center py-3 border border-white/70 text-white text-xs tracking-[0.2em] uppercase hover:bg-white hover:text-black hover:border-white transition-all duration-300 backdrop-blur-sm">
+                            <a href="portfolio.html"
+                                class="w-full max-w-xs text-center py-3 border border-white/70 text-white text-xs tracking-[0.2em] uppercase hover:bg-white hover:text-black hover:border-white transition-all duration-300 backdrop-blur-sm">
                                 Selected Works
                             </a>
                         </div>
@@ -194,19 +257,24 @@
                 </div>
 
                 <div class="flex flex-col justify-center p-12 md:p-20 bg-neutral-50/50">
-                    
+
                     <h2 class="text-4xl md:text-5xl font-serif italic text-neutral-900 mb-8">
                         The art of visual strategy.
                     </h2>
-                    
+
                     <hr class="w-12 border-t border-neutral-400 mb-10">
 
-                    <div class="text-neutral-600 font-light text-lg md:text-xl leading-loose space-y-8 text-justify md:text-left">
+                    <div
+                        class="text-neutral-600 font-light text-lg md:text-xl leading-loose space-y-8 text-justify md:text-left">
                         <p>
-                            <strong>Vanessa Santuccione</strong> is a Brazilian digital artist based in Italy, known for her visionary collages that collaborate with fashion and luxury brands worldwide. With a background in Law and a multidisciplinary practice spanning painting, poetry, and analog collage, she has exhibited internationally and performed live art in Europe.
+                            <strong>Vanessa Santuccione</strong> is a Brazilian digital artist based in Italy, known for
+                            her visionary collages that collaborate with fashion and luxury brands worldwide. With a
+                            background in Law and a multidisciplinary practice spanning painting, poetry, and analog
+                            collage, she has exhibited internationally and performed live art in Europe.
                         </p>
                         <p>
-                            Her work embraces chaos as perfect order, transforming the unseen into <strong>poetic visual narratives</strong>.
+                            Her work embraces chaos as perfect order, transforming the unseen into <strong>poetic visual
+                                narratives</strong>.
                         </p>
                     </div>
 
@@ -216,13 +284,19 @@
         </section>
         <footer class="text-center py-12 border-t border-neutral-200">
             <div class="flex justify-center gap-8 text-xl text-neutral-400">
-                <a href="https://www.instagram.com/vanessasantuccione" class="hover:text-neutral-900 transition-colors"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/vanessasantuccione" class="hover:text-neutral-900 transition-colors"><i class="fab fa-linkedin"></i></a> <a href="https://www.behance.net/vanessasantuccione" class="hover:text-neutral-900 transition-colors"><i class="fab fa-behance"></i></a>
+                <a href="https://www.instagram.com/vanessasantuccione"
+                    class="hover:text-neutral-900 transition-colors"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/vanessasantuccione"
+                    class="hover:text-neutral-900 transition-colors"><i class="fab fa-linkedin"></i></a> <a
+                    href="https://www.behance.net/vanessasantuccione"
+                    class="hover:text-neutral-900 transition-colors"><i class="fab fa-behance"></i></a>
             </div>
-            <p class="mt-10 text-[10px] text-neutral-300 uppercase tracking-widest">© 2025 Vanessa Santuccione &middot; ITALY</p>
+            <p class="mt-10 text-[10px] text-neutral-300 uppercase tracking-widest">© 2025 Vanessa Santuccione &middot;
+                ITALY</p>
         </footer>
     </main>
 
     <script src="script.js"></script>
 </body>
+
 </html>

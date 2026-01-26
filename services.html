@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services | Vanessa Santuccione</title>
+    <meta name="description"
+        content="Discover services by Vanessa Santuccione: Poetic Digital Collages, In-House Workshops, Live Art, and Fine Art Commissions.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vanessasantuccione.com/services.html">
+    <meta property="og:title" content="Services | Vanessa Santuccione">
+    <meta property="og:description"
+        content="Discover services by Vanessa Santuccione: Poetic Digital Collages, In-House Workshops, Live Art, and Fine Art Commissions.">
+    <meta property="og:image" content="https://vanessasantuccione.com/images/artist/Vanessa.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://vanessasantuccione.com/services.html">
+    <meta property="twitter:title" content="Services | Vanessa Santuccione">
+    <meta property="twitter:description"
+        content="Discover services by Vanessa Santuccione: Poetic Digital Collages, In-House Workshops, Live Art, and Fine Art Commissions.">
+    <meta property="twitter:image" content="https://vanessasantuccione.com/images/artist/Vanessa.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Grey+Qo&family=Italiana&family=Lustria&family=Marcellus&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Grey+Qo&family=Italiana&family=Lustria&family=Marcellus&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BNHNV4QRP3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNHNV4QRP3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-BNHNV4QRP3');
-</script>
+        gtag('config', 'G-BNHNV4QRP3');
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -43,68 +64,101 @@
         }
     </style>
 </head>
+
 <body class="bg-neutral-50 text-neutral-900 font-sans antialiased flex flex-col min-h-screen page-fade-in">
 
     <!-- HEADER -->
-    <header class="fixed top-0 left-0 w-full z-50 bg-neutral-50/95 backdrop-blur-sm border-b border-neutral-200/50 transition-all duration-300">
+    <header
+        class="fixed top-0 left-0 w-full z-50 bg-neutral-50/95 backdrop-blur-sm border-b border-neutral-200/50 transition-all duration-300">
         <div class="max-w-screen-2xl mx-auto px-6 h-20 flex items-center justify-between relative">
-            <button id="menu-btn" class="text-2xl focus:outline-none hover:opacity-70 transition-opacity z-50 w-10 text-left">
+            <button id="menu-btn"
+                class="text-2xl focus:outline-none hover:opacity-70 transition-opacity z-50 w-10 text-left">
                 <i class="fa-solid fa-bars"></i>
             </button>
             <div class="absolute left-1/2 transform -translate-x-1/2 text-center">
-                <a href="index.html" class="text-xl md:text-3xl tracking-[0.3em] uppercase font-brand font-medium">Vanessa Santuccione</a>
+                <a href="index.html"
+                    class="text-xl md:text-3xl tracking-[0.3em] uppercase font-brand font-medium">Vanessa
+                    Santuccione</a>
             </div>
             <div class="w-10"></div>
         </div>
     </header>
 
     <!-- MENU -->
-    <div id="menu-backdrop" class="fixed inset-0 bg-black/20 backdrop-blur-sm z-30 hidden opacity-0 transition-opacity duration-500" onclick="toggleMenu()"></div>
-    <div id="menu-sidebar" class="fixed top-0 left-0 h-full w-80 bg-neutral-50 z-40 transform -translate-x-full transition-transform duration-500 ease-out shadow-2xl border-r border-neutral-200 flex flex-col justify-start pt-28 pl-12">
+    <div id="menu-backdrop"
+        class="fixed inset-0 bg-black/20 backdrop-blur-sm z-30 hidden opacity-0 transition-opacity duration-500"
+        onclick="toggleMenu()"></div>
+    <div id="menu-sidebar"
+        class="fixed top-0 left-0 h-full w-80 bg-neutral-50 z-40 transform -translate-x-full transition-transform duration-500 ease-out shadow-2xl border-r border-neutral-200 flex flex-col justify-start pt-28 pl-12">
         <nav class="space-y-6 text-left flex flex-col">
-            <a href="index.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Home</a>
-            <a href="portfolio.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Selected Works</a>
-            <a href="about.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">The Artist</a>
-            <a href="services.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Expertise</a>
-            <a href="contact.html" class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Inquiries</a>
+            <a href="index.html"
+                class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Home</a>
+            <a href="portfolio.html"
+                class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Selected
+                Works</a>
+            <a href="about.html"
+                class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">The
+                Artist</a>
+            <a href="services.html"
+                class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Expertise</a>
+            <a href="contact.html"
+                class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Inquiries</a>
         </nav>
     </div>
 
     <main class="flex-grow pt-32 px-6 md:px-12 max-w-screen-2xl mx-auto w-full">
         <!-- INTRO -->
         <div class="text-center mb-16 max-w-4xl mx-auto">
-            <h2 class="text-3xl md:text-5xl font-serif italic mb-6">Artistic Collaborations & Conceptual Impact</h2>
+            <h1 class="text-3xl md:text-5xl font-serif italic mb-6">Artistic Collaborations & Conceptual Impact</h1>
             <p class="text-sm uppercase tracking-widest text-neutral-500 leading-relaxed">
-                I partner with Creative Leaders and Luxury Agencies to create campaigns with conceptual depth. <br class="hidden md:block">My focus is delivering art that speaks to the highest level of narrative and exclusivity.
+                I partner with Creative Leaders and Luxury Agencies to create campaigns with conceptual depth. <br
+                    class="hidden md:block">My focus is delivering art that speaks to the highest level of narrative and
+                exclusivity.
             </p>
         </div>
 
         <!-- LISTA SANFONA (ACCORDION) -->
         <div class="max-w-5xl mx-auto mb-24 border-t border-neutral-200">
-            
+
             <!-- ITEM 01 -->
             <div class="border-b border-neutral-200 group">
                 <!-- Cabeçalho Clicável -->
-                <button class="w-full py-10 flex flex-col md:flex-row items-center md:items-baseline md:justify-between text-left focus:outline-none" onclick="toggleAccordion('service-01', this)">
+                <button
+                    class="w-full py-10 flex flex-col md:flex-row items-center md:items-baseline md:justify-between text-left focus:outline-none"
+                    onclick="toggleAccordion('service-01', this)">
                     <div class="flex flex-col md:flex-row items-center md:items-baseline gap-4 md:gap-12">
-                        <span class="text-xs font-bold tracking-[0.2em] uppercase text-neutral-400 group-hover:text-neutral-900 transition-colors">01</span>
-                        <h3 class="text-2xl md:text-4xl font-serif italic text-neutral-900 group-hover:opacity-70 transition-opacity text-center md:text-left">Poetic Digital Collages</h3>
+                        <span
+                            class="text-xs font-bold tracking-[0.2em] uppercase text-neutral-400 group-hover:text-neutral-900 transition-colors">01</span>
+                        <h3
+                            class="text-2xl md:text-4xl font-serif italic text-neutral-900 group-hover:opacity-70 transition-opacity text-center md:text-left">
+                            Poetic Digital Collages</h3>
                     </div>
-                    <div class="mt-4 md:mt-0 text-xl font-light text-neutral-400 group-hover:text-neutral-900 transition-colors">
+                    <div
+                        class="mt-4 md:mt-0 text-xl font-light text-neutral-400 group-hover:text-neutral-900 transition-colors">
                         <i class="fa-solid fa-plus transition-transform duration-500 transform"></i>
                     </div>
                 </button>
-                
+
                 <!-- Conteúdo Oculto -->
                 <div id="service-01" class="accordion-content overflow-hidden max-h-0 opacity-0">
                     <div class="pb-16 pt-4 md:pl-20 max-w-3xl mx-auto md:mx-0">
-                        <p class="text-lg md:text-xl font-serif text-neutral-600 leading-relaxed mb-8 text-center md:text-left">
-                            This is the heart of my practice. I deliver narrative assets that translate complex concepts into powerful visual poetry, born from a collaborative definition of your core message.
+                        <p
+                            class="text-lg md:text-xl font-serif text-neutral-600 leading-relaxed mb-8 text-center md:text-left">
+                            This is the heart of my practice. I deliver narrative assets that translate complex concepts
+                            into powerful visual poetry, born from a collaborative definition of your core message.
                         </p>
-                        <ul class="text-sm text-neutral-500 space-y-4 font-light border-l border-neutral-200 pl-6 ml-4 md:ml-0">
-                            <li><strong class="text-neutral-900 block mb-1 uppercase tracking-widest text-xs">High-Resolution Key Visuals (KV)</strong> The single, definitive image for global campaigns, OOH (Outdoors), and high-impact digital hero banners.</li>
-                            <li><strong class="text-neutral-900 block mb-1 uppercase tracking-widest text-xs">Editorial & Lookbook Art</strong> Creating cohesive visual series that transcend traditional photography, perfect for spreads or exclusive brand collector books.</li>
-                            <li><strong class="text-neutral-900 block mb-1 uppercase tracking-widest text-xs">Packaging Art</strong> Unique 2D art developed for limited-edition packaging, resulting from a tailored artistic collaboration on the product design.</li>
+                        <ul
+                            class="text-sm text-neutral-500 space-y-4 font-light border-l border-neutral-200 pl-6 ml-4 md:ml-0">
+                            <li><strong
+                                    class="text-neutral-900 block mb-1 uppercase tracking-widest text-xs">High-Resolution
+                                    Key Visuals (KV)</strong> The single, definitive image for global campaigns, OOH
+                                (Outdoors), and high-impact digital hero banners.</li>
+                            <li><strong class="text-neutral-900 block mb-1 uppercase tracking-widest text-xs">Editorial
+                                    & Lookbook Art</strong> Creating cohesive visual series that transcend traditional
+                                photography, perfect for spreads or exclusive brand collector books.</li>
+                            <li><strong class="text-neutral-900 block mb-1 uppercase tracking-widest text-xs">Packaging
+                                    Art</strong> Unique 2D art developed for limited-edition packaging, resulting from a
+                                tailored artistic collaboration on the product design.</li>
                         </ul>
                     </div>
                 </div>
@@ -112,25 +166,42 @@
 
             <!-- ITEM 02 -->
             <div class="border-b border-neutral-200 group">
-                <button class="w-full py-10 flex flex-col md:flex-row items-center md:items-baseline md:justify-between text-left focus:outline-none" onclick="toggleAccordion('service-02', this)">
+                <button
+                    class="w-full py-10 flex flex-col md:flex-row items-center md:items-baseline md:justify-between text-left focus:outline-none"
+                    onclick="toggleAccordion('service-02', this)">
                     <div class="flex flex-col md:flex-row items-center md:items-baseline gap-4 md:gap-12">
-                        <span class="text-xs font-bold tracking-[0.2em] uppercase text-neutral-400 group-hover:text-neutral-900 transition-colors">02</span>
-                        <h3 class="text-2xl md:text-4xl font-serif italic text-neutral-900 group-hover:opacity-70 transition-opacity text-center md:text-left">In-House Conceptual Workshops</h3>
+                        <span
+                            class="text-xs font-bold tracking-[0.2em] uppercase text-neutral-400 group-hover:text-neutral-900 transition-colors">02</span>
+                        <h3
+                            class="text-2xl md:text-4xl font-serif italic text-neutral-900 group-hover:opacity-70 transition-opacity text-center md:text-left">
+                            In-House Conceptual Workshops</h3>
                     </div>
-                    <div class="mt-4 md:mt-0 text-xl font-light text-neutral-400 group-hover:text-neutral-900 transition-colors">
+                    <div
+                        class="mt-4 md:mt-0 text-xl font-light text-neutral-400 group-hover:text-neutral-900 transition-colors">
                         <i class="fa-solid fa-plus transition-transform duration-500 transform"></i>
                     </div>
                 </button>
-                
+
                 <div id="service-02" class="accordion-content overflow-hidden max-h-0 opacity-0">
                     <div class="pb-16 pt-4 md:pl-20 max-w-3xl mx-auto md:mx-0">
-                        <p class="text-lg md:text-xl font-serif text-neutral-600 leading-relaxed mb-8 text-center md:text-left">
-                            Offer your teams a moment of genuine connection and creative release. I guide personalized, in-house collage workshops that serve as unique mental well-being experiences. No prior art experience is needed. This is about unlocking intuitive creativity and fostering shared creative energy in a collaborative setting.
+                        <p
+                            class="text-lg md:text-xl font-serif text-neutral-600 leading-relaxed mb-8 text-center md:text-left">
+                            Offer your teams a moment of genuine connection and creative release. I guide personalized,
+                            in-house collage workshops that serve as unique mental well-being experiences. No prior art
+                            experience is needed. This is about unlocking intuitive creativity and fostering shared
+                            creative energy in a collaborative setting.
                         </p>
-                        <ul class="text-sm text-neutral-500 space-y-4 font-light border-l border-neutral-200 pl-6 ml-4 md:ml-0">
-                            <li><strong class="text-neutral-900 block mb-1 uppercase tracking-widest text-xs">Executive Retreats</strong> A sophisticated, reflective, and hands-on activity that fosters deep team connection away from screens.</li>
-                            <li><strong class="text-neutral-900 block mb-1 uppercase tracking-widest text-xs">Team Well-being Days</strong> A guided experience providing relaxation and focus, proving your brand invests in the intuitive side of your personnel.</li>
-                            <li><strong class="text-neutral-900 block mb-1 uppercase tracking-widest text-xs">Client Appreciation Events</strong> A unique, shared artistic moment to deepen relationships with key clients and partners.</li>
+                        <ul
+                            class="text-sm text-neutral-500 space-y-4 font-light border-l border-neutral-200 pl-6 ml-4 md:ml-0">
+                            <li><strong class="text-neutral-900 block mb-1 uppercase tracking-widest text-xs">Executive
+                                    Retreats</strong> A sophisticated, reflective, and hands-on activity that fosters
+                                deep team connection away from screens.</li>
+                            <li><strong class="text-neutral-900 block mb-1 uppercase tracking-widest text-xs">Team
+                                    Well-being Days</strong> A guided experience providing relaxation and focus, proving
+                                your brand invests in the intuitive side of your personnel.</li>
+                            <li><strong class="text-neutral-900 block mb-1 uppercase tracking-widest text-xs">Client
+                                    Appreciation Events</strong> A unique, shared artistic moment to deepen
+                                relationships with key clients and partners.</li>
                         </ul>
                     </div>
                 </div>
@@ -138,25 +209,41 @@
 
             <!-- ITEM 03 -->
             <div class="border-b border-neutral-200 group">
-                <button class="w-full py-10 flex flex-col md:flex-row items-center md:items-baseline md:justify-between text-left focus:outline-none" onclick="toggleAccordion('service-03', this)">
+                <button
+                    class="w-full py-10 flex flex-col md:flex-row items-center md:items-baseline md:justify-between text-left focus:outline-none"
+                    onclick="toggleAccordion('service-03', this)">
                     <div class="flex flex-col md:flex-row items-center md:items-baseline gap-4 md:gap-12">
-                        <span class="text-xs font-bold tracking-[0.2em] uppercase text-neutral-400 group-hover:text-neutral-900 transition-colors">03</span>
-                        <h3 class="text-2xl md:text-4xl font-serif italic text-neutral-900 group-hover:opacity-70 transition-opacity text-center md:text-left">Luxury Experiential Live Art</h3>
+                        <span
+                            class="text-xs font-bold tracking-[0.2em] uppercase text-neutral-400 group-hover:text-neutral-900 transition-colors">03</span>
+                        <h3
+                            class="text-2xl md:text-4xl font-serif italic text-neutral-900 group-hover:opacity-70 transition-opacity text-center md:text-left">
+                            Luxury Experiential Live Art</h3>
                     </div>
-                    <div class="mt-4 md:mt-0 text-xl font-light text-neutral-400 group-hover:text-neutral-900 transition-colors">
+                    <div
+                        class="mt-4 md:mt-0 text-xl font-light text-neutral-400 group-hover:text-neutral-900 transition-colors">
                         <i class="fa-solid fa-plus transition-transform duration-500 transform"></i>
                     </div>
                 </button>
-                
+
                 <div id="service-03" class="accordion-content overflow-hidden max-h-0 opacity-0">
                     <div class="pb-16 pt-4 md:pl-20 max-w-3xl mx-auto md:mx-0">
-                        <p class="text-lg md:text-xl font-serif text-neutral-600 leading-relaxed mb-8 text-center md:text-left">
-                            Transform your launch or exclusive event into a spontaneous work of art. I create conceptual analogic collages in real-time, delivering a luxury experiential performance that is a live artistic collaboration with the energy of your brand and guests.
+                        <p
+                            class="text-lg md:text-xl font-serif text-neutral-600 leading-relaxed mb-8 text-center md:text-left">
+                            Transform your launch or exclusive event into a spontaneous work of art. I create conceptual
+                            analogic collages in real-time, delivering a luxury experiential performance that is a live
+                            artistic collaboration with the energy of your brand and guests.
                         </p>
-                        <ul class="text-sm text-neutral-500 space-y-4 font-light border-l border-neutral-200 pl-6 ml-4 md:ml-0">
-                            <li><strong class="text-neutral-900 block mb-1 uppercase tracking-widest text-xs">Product Launches & Activations</strong> Art created in the moment making the event itself an unforgettable piece of content.</li>
-                            <li><strong class="text-neutral-900 block mb-1 uppercase tracking-widest text-xs">VIP Dinners & Galas</strong> Subtle, sophisticated entertainment that turns a blank canvas into a conceptual piece over the course of an evening.</li>
-                            <li><strong class="text-neutral-900 block mb-1 uppercase tracking-widest text-xs">In-Store Events</strong> Driving traffic and media coverage by turning your retail space into a temporary artistic studio.</li>
+                        <ul
+                            class="text-sm text-neutral-500 space-y-4 font-light border-l border-neutral-200 pl-6 ml-4 md:ml-0">
+                            <li><strong class="text-neutral-900 block mb-1 uppercase tracking-widest text-xs">Product
+                                    Launches & Activations</strong> Art created in the moment making the event itself an
+                                unforgettable piece of content.</li>
+                            <li><strong class="text-neutral-900 block mb-1 uppercase tracking-widest text-xs">VIP
+                                    Dinners & Galas</strong> Subtle, sophisticated entertainment that turns a blank
+                                canvas into a conceptual piece over the course of an evening.</li>
+                            <li><strong class="text-neutral-900 block mb-1 uppercase tracking-widest text-xs">In-Store
+                                    Events</strong> Driving traffic and media coverage by turning your retail space into
+                                a temporary artistic studio.</li>
                         </ul>
                     </div>
                 </div>
@@ -164,25 +251,41 @@
 
             <!-- ITEM 04 -->
             <div class="border-b border-neutral-200 group">
-                <button class="w-full py-10 flex flex-col md:flex-row items-center md:items-baseline md:justify-between text-left focus:outline-none" onclick="toggleAccordion('service-04', this)">
+                <button
+                    class="w-full py-10 flex flex-col md:flex-row items-center md:items-baseline md:justify-between text-left focus:outline-none"
+                    onclick="toggleAccordion('service-04', this)">
                     <div class="flex flex-col md:flex-row items-center md:items-baseline gap-4 md:gap-12">
-                        <span class="text-xs font-bold tracking-[0.2em] uppercase text-neutral-400 group-hover:text-neutral-900 transition-colors">04</span>
-                        <h3 class="text-2xl md:text-4xl font-serif italic text-neutral-900 group-hover:opacity-70 transition-opacity text-center md:text-left">Fine Art Commissions</h3>
+                        <span
+                            class="text-xs font-bold tracking-[0.2em] uppercase text-neutral-400 group-hover:text-neutral-900 transition-colors">04</span>
+                        <h3
+                            class="text-2xl md:text-4xl font-serif italic text-neutral-900 group-hover:opacity-70 transition-opacity text-center md:text-left">
+                            Fine Art Commissions</h3>
                     </div>
-                    <div class="mt-4 md:mt-0 text-xl font-light text-neutral-400 group-hover:text-neutral-900 transition-colors">
+                    <div
+                        class="mt-4 md:mt-0 text-xl font-light text-neutral-400 group-hover:text-neutral-900 transition-colors">
                         <i class="fa-solid fa-plus transition-transform duration-500 transform"></i>
                     </div>
                 </button>
-                
+
                 <div id="service-04" class="accordion-content overflow-hidden max-h-0 opacity-0">
                     <div class="pb-16 pt-4 md:pl-20 max-w-3xl mx-auto md:mx-0">
-                        <p class="text-lg md:text-xl font-serif text-neutral-600 leading-relaxed mb-8 text-center md:text-left">
-                            Beyond the campaign scope, I create one-of-a-kind, conceptual fine art based on pure imagination. This service is for clients seeking truly unique pieces or a deep, exclusive artistic partnership to visualize a personal philosophy or brand statement.
+                        <p
+                            class="text-lg md:text-xl font-serif text-neutral-600 leading-relaxed mb-8 text-center md:text-left">
+                            Beyond the campaign scope, I create one-of-a-kind, conceptual fine art based on pure
+                            imagination. This service is for clients seeking truly unique pieces or a deep, exclusive
+                            artistic partnership to visualize a personal philosophy or brand statement.
                         </p>
-                        <ul class="text-sm text-neutral-500 space-y-4 font-light border-l border-neutral-200 pl-6 ml-4 md:ml-0">
-                            <li><strong class="text-neutral-900 block mb-1 uppercase tracking-widest text-xs">Corporate Art Collections</strong> A statement piece for your Headquarters or executive offices that visually encapsulates your company's philosophy.</li>
-                            <li><strong class="text-neutral-900 block mb-1 uppercase tracking-widest text-xs">Executive Gifting</strong> Highly personalized, conceptual art used as a memorable gift for top-tier clients or executives.</li>
-                            <li><strong class="text-neutral-900 block mb-1 uppercase tracking-widest text-xs">Private Collector Commissions</strong> Creating a single, defining work of art that visualizes a personal belief or unique narrative for private residences.</li>
+                        <ul
+                            class="text-sm text-neutral-500 space-y-4 font-light border-l border-neutral-200 pl-6 ml-4 md:ml-0">
+                            <li><strong class="text-neutral-900 block mb-1 uppercase tracking-widest text-xs">Corporate
+                                    Art Collections</strong> A statement piece for your Headquarters or executive
+                                offices that visually encapsulates your company's philosophy.</li>
+                            <li><strong class="text-neutral-900 block mb-1 uppercase tracking-widest text-xs">Executive
+                                    Gifting</strong> Highly personalized, conceptual art used as a memorable gift for
+                                top-tier clients or executives.</li>
+                            <li><strong class="text-neutral-900 block mb-1 uppercase tracking-widest text-xs">Private
+                                    Collector Commissions</strong> Creating a single, defining work of art that
+                                visualizes a personal belief or unique narrative for private residences.</li>
                         </ul>
                     </div>
                 </div>
@@ -197,17 +300,20 @@
                 <div class="flex flex-col items-center">
                     <span class="text-4xl font-serif italic text-neutral-300 mb-4">01</span>
                     <h4 class="font-bold text-xs uppercase tracking-wider mb-2">Briefing & Review</h4>
-                    <p class="text-xs text-neutral-500 leading-relaxed">Vision, goals, and technical needs assessment.</p>
+                    <p class="text-xs text-neutral-500 leading-relaxed">Vision, goals, and technical needs assessment.
+                    </p>
                 </div>
                 <div class="flex flex-col items-center">
                     <span class="text-4xl font-serif italic text-neutral-300 mb-4">02</span>
                     <h4 class="font-bold text-xs uppercase tracking-wider mb-2">Proposal & Contract</h4>
-                    <p class="text-xs text-neutral-500 leading-relaxed">Scope, timeline, deliverables, and investment.</p>
+                    <p class="text-xs text-neutral-500 leading-relaxed">Scope, timeline, deliverables, and investment.
+                    </p>
                 </div>
                 <div class="flex flex-col items-center">
                     <span class="text-4xl font-serif italic text-neutral-300 mb-4">03</span>
                     <h4 class="font-bold text-xs uppercase tracking-wider mb-2">Creation & Revisions</h4>
-                    <p class="text-xs text-neutral-500 leading-relaxed">Strategic execution with two rounds of refinement.</p>
+                    <p class="text-xs text-neutral-500 leading-relaxed">Strategic execution with two rounds of
+                        refinement.</p>
                 </div>
                 <div class="flex flex-col items-center">
                     <span class="text-4xl font-serif italic text-neutral-300 mb-4">04</span>
@@ -227,12 +333,12 @@
         function toggleAccordion(id, btn) {
             const content = document.getElementById(id);
             const icon = btn.querySelector('.fa-plus');
-            
+
             // Fecha todos os outros primeiro (efeito "Sanfona Única")
             // Se quiser permitir múltiplos abertos, remova este bloco.
             const allContents = document.querySelectorAll('.accordion-content');
             const allIcons = document.querySelectorAll('.fa-plus');
-            
+
             allContents.forEach(c => {
                 if (c.id !== id) {
                     c.style.maxHeight = '0px';
@@ -260,4 +366,5 @@
         }
     </script>
 </body>
+
 </html>
