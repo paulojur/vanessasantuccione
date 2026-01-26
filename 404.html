@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Vanessa Santuccione</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Grey+Qo&family=Italiana&family=Lustria&family=Marcellus&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Marcellus', 'sans-serif'],
+                        serif: ['Cormorant Garamond', 'serif'],
+                        brand: ['Bodoni Moda', 'serif'],
+                        cta: ['Grey Qo', 'cursive'],
+                    },
+                    colors: {
+                        neutral: { 50: '#F9FAFB', 100: '#F3F4F6', 900: '#171717' }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="icon" type="image/webp" href="images/artist/Vanessa.webp">
+</head>
+
+<body class="bg-neutral-50 text-neutral-900 font-sans antialiased flex flex-col min-h-screen">
+
+    <header
+        class="fixed top-0 left-0 w-full z-50 bg-neutral-50/95 backdrop-blur-sm border-b border-neutral-200/50 transition-all duration-300">
+        <div class="max-w-screen-2xl mx-auto px-6 h-20 flex items-center justify-between relative">
+            <button id="menu-btn" onclick="toggleMenu()"
+                class="text-2xl focus:outline-none hover:opacity-70 transition-opacity z-50 w-10 text-left">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="absolute left-1/2 transform -translate-x-1/2 text-center">
+                <a href="index.html"
+                    class="text-xl md:text-3xl tracking-[0.3em] uppercase font-brand font-medium">Vanessa
+                    Santuccione</a>
+            </div>
+            <div class="w-10"></div>
+        </div>
+    </header>
+
+    <div id="menu-backdrop"
+        class="fixed inset-0 bg-black/20 backdrop-blur-sm z-30 hidden opacity-0 transition-opacity duration-500"
+        onclick="toggleMenu()"></div>
+    <div id="menu-sidebar"
+        class="fixed top-0 left-0 h-full w-80 bg-neutral-50 z-40 transform -translate-x-full transition-transform duration-500 ease-out shadow-2xl border-r border-neutral-200 flex flex-col justify-start pt-28 pl-12">
+        <nav class="space-y-6 text-left flex flex-col">
+            <a href="index.html"
+                class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Home</a>
+            <a href="portfolio.html"
+                class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Selected
+                Works</a>
+            <a href="about.html"
+                class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">The
+                Artist</a>
+            <a href="services.html"
+                class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Expertise</a>
+            <a href="contact.html"
+                class="text-2xl font-light tracking-widest hover:italic hover:translate-x-2 transition-all duration-300">Inquiries</a>
+        </nav>
+    </div>
+
+    <main class="flex-grow flex items-center justify-center p-6 text-center">
+        <div class="max-w-md w-full space-y-8">
+            <div class="font-serif italic text-9xl text-neutral-200 leading-none select-none">404</div>
+            <h1 class="text-2xl uppercase tracking-[0.3em] font-light">Page Not Found</h1>
+            <p class="text-neutral-500 font-light leading-relaxed">The page you are looking for has been moved or no
+                longer exists.</p>
+
+            <div class="pt-8">
+                <a href="index.html"
+                    class="group inline-flex items-center gap-3 px-8 py-3 bg-neutral-900 border border-neutral-900 text-white text-xs uppercase tracking-[0.2em] hover:bg-neutral-800 transition-all duration-500">
+                    <span>Return Home</span>
+                    <i
+                        class="fa-solid fa-arrow-right text-[10px] transform group-hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-12 border-t border-neutral-200">
+        <div class="flex justify-center gap-8 text-xl text-neutral-400">
+            <a href="https://www.instagram.com/vanessasantuccione" class="hover:text-neutral-900 transition-colors"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/vanessasantuccione" class="hover:text-neutral-900 transition-colors"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://www.behance.net/vanessasantuccione" class="hover:text-neutral-900 transition-colors"><i
+                    class="fab fa-behance"></i></a>
+        </div>
+        <p class="mt-10 text-[10px] text-neutral-300 uppercase tracking-widest">© 2025 Vanessa Santuccione &middot;
+            ITALY</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            const menuSidebar = document.getElementById('menu-sidebar');
+            const menuBackdrop = document.getElementById('menu-backdrop');
+
+            if (menuSidebar.classList.contains('-translate-x-full')) {
+                menuSidebar.classList.remove('-translate-x-full');
+                menuBackdrop.classList.remove('hidden');
+                setTimeout(() => { menuBackdrop.classList.remove('opacity-0'); }, 10);
+            } else {
+                menuSidebar.classList.add('-translate-x-full');
+                menuBackdrop.classList.add('opacity-0');
+                setTimeout(() => { menuBackdrop.classList.add('hidden'); }, 500);
+            }
+        }
+    </script>
+</body>
+
+</html>
